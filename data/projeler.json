@@ -45,7 +45,7 @@
       "tarih": { "baslangic": "2026", "bitis": "2026" },
       "durum": "kullanimda",
       "teknoloji": ["HTML", "CSS", "JavaScript", "Netlify"],
-      "link": null,
+      "link": "https://mubeamanisapo.netlify.app/",
       "gorsel": null,
       "tr": {
         "baslik": "Satınalma Siparişi Rehberi",
@@ -123,7 +123,7 @@
       "tarih": { "baslangic": "2026", "bitis": null },
       "durum": "canli",
       "teknoloji": ["GitHub", "Netlify", "Gemini API", "JavaScript"],
-      "link": null,
+      "link": "https://ela7dersleri.netlify.app/",
       "gorsel": null,
       "tr": {
         "baslik": "Kişiselleştirilmiş Ders Defteri",
@@ -139,7 +139,7 @@
         "cozum": "Lessons broken into small steps, topic summaries, review games, exam-prep sections, a Socratic study bot and a parent panel that shows progress. Content is separated from code, so adding a subject or topic is a single-file change.",
         "sonuc": "Live and updated throughout the school term; now covers several subjects."
       },
-      "gizlilik": "Öğrencinin adı, okulu ve kişisel bilgisi yok. Canlı link verilmez (açık soru)."
+      "gizlilik": "Öğrencinin adı, okulu ve kişisel bilgisi yok. Canlı link Kemal onayıyla verildi (27.11.2026); site metinlerinde öğrenci adı geçmez."
     },
     {
       "id": "edefter-donusturucu",
@@ -177,7 +177,7 @@
       "tarih": { "baslangic": "2026", "bitis": null },
       "durum": "canli",
       "teknoloji": ["GitHub", "Netlify", "JavaScript"],
-      "link": null,
+      "link": "https://ankuzef-defteri.netlify.app/",
       "gorsel": null,
       "tr": { "baslik": "Açıköğretim Sınav Defteri", "ozet": "Açıköğretim dersleri için çıkmış sınavları çalışma ve sınav modlu online testlere çeviren, tahmini deneme ve hesap atölyesi içeren hazırlık sitesi. Önce ders başına tek dosyalık 8 uygulama olarak başladı, sonra tek sitede birleşti." },
       "en": { "baslik": "Open-University Exam Notebook", "ozet": "An exam-prep site that turns past open-university exams into online tests with study and exam modes, plus mock exams and a calculation workshop. It started as eight single-file apps, one per course, and later merged into one site." },
@@ -205,7 +205,7 @@
       "tarih": { "baslangic": "2026-07", "bitis": "2026-08" },
       "durum": "kullanildi",
       "teknoloji": ["JavaScript", "Firebase Firestore", "Netlify"],
-      "link": null,
+      "link": "https://mubeamanisabasket.netlify.app/",
       "gorsel": null,
       "tr": { "baslik": "Basketbol Takım Kurucu", "ozet": "İş yerindeki haftalık basketbol grubu için katılım, oyuncu puanlama, puanlara göre denk takım kurma (3'e 3'ten 5'e 5'e), kazanma ihtimali terazisi ve maç geçmişi. Paylaşılan veri Firebase'de." },
       "en": { "baslik": "Basketball Team Builder", "ozet": "For a weekly workplace basketball group: attendance, player ratings, balanced teams from ratings (3v3 to 5v5), a win-probability scale and match history. Shared data lives in Firebase." },
@@ -282,20 +282,6 @@
       "gizlilik": null
     },
     {
-      "id": "yetkinlik-matrisi",
-      "yerlesim": "arsiv",
-      "grup": "finans",
-      "sira": 30,
-      "tarih": { "baslangic": "2026-09", "bitis": "2026-09" },
-      "durum": "kullanildi",
-      "teknoloji": ["Claude artifact", "AI"],
-      "link": null,
-      "gorsel": null,
-      "tr": { "baslik": "Yetkinlik Matrisi Oluşturucu", "ozet": "Görev tanımından yetkinlik matrisi taslağı üreten araç." },
-      "en": { "baslik": "Competency Matrix Builder", "ozet": "Drafts a competency matrix from a job description." },
-      "gizlilik": "Çalışan adı yok."
-    },
-    {
       "id": "kpi-rehberi",
       "yerlesim": "arsiv",
       "grup": "finans",
@@ -324,20 +310,6 @@
       "gizlilik": null
     },
     {
-      "id": "kitap-sinavi",
-      "yerlesim": "arsiv",
-      "grup": "egitim",
-      "sira": 33,
-      "tarih": { "baslangic": "2026", "bitis": null },
-      "durum": "canli",
-      "teknoloji": ["GitHub", "Netlify"],
-      "link": null,
-      "gorsel": null,
-      "tr": { "baslik": "Kitap Sınavı Hazırlık Sitesi", "ozet": "Okuma kitapları için soru-cevap hazırlık sitesi." },
-      "en": { "baslik": "Book Quiz Prep Site", "ozet": "A question-and-answer prep site for assigned reading books." },
-      "gizlilik": "Öğrenci adı yok."
-    },
-    {
       "id": "para-ustu-oyunu",
       "yerlesim": "arsiv",
       "grup": "egitim",
@@ -352,34 +324,6 @@
       "gizlilik": "Kişisel ad kullanılmaz."
     },
     {
-      "id": "mia",
-      "yerlesim": "arsiv",
-      "grup": "egitim",
-      "sira": 35,
-      "tarih": { "baslangic": "2025-11", "bitis": "2025-11" },
-      "durum": "prototip",
-      "teknoloji": ["Python", "PyQt6"],
-      "link": null,
-      "gorsel": null,
-      "tr": { "baslik": "Mia — Sokratik Öğretmen", "ozet": "Ortaokul öğrencilerine soru sorarak öğreten masaüstü uygulama denemesi." },
-      "en": { "baslik": "Mia — Socratic Tutor", "ozet": "A desktop app prototype that teaches middle-school students by asking questions." },
-      "gizlilik": null
-    },
-    {
-      "id": "zeka-atlasi",
-      "yerlesim": "arsiv",
-      "grup": "gunluk",
-      "sira": 36,
-      "tarih": { "baslangic": "2026-08", "bitis": "2026-08" },
-      "durum": "tamamlandi",
-      "teknoloji": ["HTML", "JavaScript"],
-      "link": null,
-      "gorsel": null,
-      "tr": { "baslik": "Zekâ Atlası", "ozet": "Yaygın yapay zekâ araçlarını kategoriye göre filtreleyip karşılaştıran rehber." },
-      "en": { "baslik": "AI Atlas", "ozet": "A guide that filters and compares popular AI tools by category." },
-      "gizlilik": "Ağustos 2026 itibarıyla; güncelliği kontrol edilmeli."
-    },
-    {
       "id": "yapay-zeka-plani",
       "yerlesim": "arsiv",
       "grup": "ai",
@@ -391,34 +335,6 @@
       "gorsel": null,
       "tr": { "baslik": "Yapay Zekâ Çantası & Planı", "ozet": "Yaptığım işleri, kullandığım araçları, yayınlama yollarını ve öğrenme yol haritamı toplayan kişisel rehber uygulama." },
       "en": { "baslik": "AI Toolkit & Plan", "ozet": "A personal guide app that collects my past work, tools, publishing options and learning roadmap." },
-      "gizlilik": null
-    },
-    {
-      "id": "flask-bmi",
-      "yerlesim": "arsiv",
-      "grup": "okul",
-      "sira": 38,
-      "tarih": { "baslangic": "2021", "bitis": "2025" },
-      "durum": "tamamlandi",
-      "teknoloji": ["Python", "Flask"],
-      "link": null,
-      "gorsel": null,
-      "tr": { "baslik": "Flask ile BMI Uygulaması", "ozet": "Vücut kitle indeksi hesaplayan Flask web uygulaması." },
-      "en": { "baslik": "BMI App with Flask", "ozet": "A Flask web app that calculates body mass index." },
-      "gizlilik": null
-    },
-    {
-      "id": "jwt-token",
-      "yerlesim": "arsiv",
-      "grup": "okul",
-      "sira": 39,
-      "tarih": { "baslangic": "2021", "bitis": "2025" },
-      "durum": "tamamlandi",
-      "teknoloji": ["Python", "JWT"],
-      "link": null,
-      "gorsel": null,
-      "tr": { "baslik": "JWT Token Yönetim Sistemi", "ozet": "Kimlik doğrulama için JWT token üreten ve doğrulayan sistem." },
-      "en": { "baslik": "JWT Token Management System", "ozet": "A system that issues and validates JWT tokens for authentication." },
       "gizlilik": null
     },
     {

@@ -16,6 +16,14 @@ DURUM = {"canli", "kullanimda", "gelistiriliyor", "aktif", "kullanildi", "teslim
 TARIH = re.compile(r"^\d{4}(-\d{2})?$")
 TELEFON = re.compile(r"(\+?90[\s-]?)?5\d{2}[\s-]?\d{3}[\s-]?\d{2}[\s-]?\d{2}")
 YASAKLI = ["Mubea"]
+# Canlı link verilmesine Kemal'in onay verdiği projeler (AGENTS.md 4.1, 4.3). Yeni link = önce onay, sonra buraya ekle.
+ONAYLI_LINK = {
+    "ai-prompt-studio": "https://aiprompt-studio.com",
+    "po-rehberi": "https://mubeamanisapo.netlify.app/",
+    "ders-defteri": "https://ela7dersleri.netlify.app/",
+    "basket-takim": "https://mubeamanisabasket.netlify.app/",
+    "ankuzef-defteri": "https://ankuzef-defteri.netlify.app/",
+}
 
 hatalar = []
 
@@ -62,6 +70,11 @@ def projeleri_denetle(yasakli):
             hata(f"{pid}: tarih.baslangic biçimi yyyy ya da yyyy-aa olmalı")
         if t.get("bitis") is not None and not TARIH.match(str(t["bitis"])):
             hata(f"{pid}: tarih.bitis biçimi yyyy ya da yyyy-aa olmalı")
+        link = p.get("link")
+        if link is not None and ONAYLI_LINK.get(pid) != link:
+            hata(f"{pid}: link onaylı listede yok ya da farklı (ONAYLI_LINK)")
+        if p.get("gorsel") and not (KOK / p["gorsel"]).exists():
+            hata(f"{pid}: gorsel dosyası yok: {p['gorsel']}")
         zorunlu = ["baslik", "ozet"]
         if p.get("yerlesim") == "vitrin":
             zorunlu += ["problem", "cozum", "sonuc"]
@@ -79,6 +92,9 @@ def ozgecmisi_denetle(yasakli):
     # İşveren adı özgeçmişin deneyim bölümünde serbest (AGENTS.md 4.1); telefon her yerde yasak.
     if TELEFON.search(json.dumps(veri, ensure_ascii=False)):
         hata("ozgecmis.json: telefon numarasına benzeyen ifade")
+    foto = veri.get("kisi", {}).get("foto")
+    if foto and not (KOK / foto).exists():
+        hata(f"ozgecmis.kisi.foto dosyası yok: {foto}")
     for anahtar in ("kisi", "hakkimda"):
         metin_tara(f"ozgecmis.{anahtar}", json.dumps(veri.get(anahtar, {}), ensure_ascii=False),
                    [k for k in yasakli if k != "Mubea"])

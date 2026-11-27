@@ -34,6 +34,7 @@ Sayfalar içerik yazmaz; içeriği `data/` altındaki JSON dosyalarından okur.
 │   └── ozgecmis.json     Kişi, hakkımda, deneyim, eğitim, yetkinlik
 ├── assets/
 │   ├── Kemal_Beydilli_CV.pdf
+│   ├── foto/kemal-beydilli.jpg  Özgeçmiş fotoğrafı (480×480, `ozgecmis.json` → `kisi.foto`)
 │   └── projeler/<id>.png  Proje görselleri (örnek veriyle çekilmiş)
 ├── js/site.js            JSON okuma, dil, filtre, kart çizimi
 ├── bant-tema.css · bant-tema.js · bant-temel.css
@@ -61,9 +62,9 @@ Sayfalar içerik yazmaz; içeriği `data/` altındaki JSON dosyalarından okur.
 
 ## 4. Gizlilik kuralları (değişmez)
 
-1. **İşverenin adı (Mubea) proje kartlarında, proje detaylarında ve görsellerde geçmez.** Gerekirse "otomotiv tedarikçisi", "iş yerim", "fabrika" denir. İşveren adı yalnızca `ozgecmis.html`'deki deneyim bölümünde yer alır.
+1. **İşverenin adı (Mubea) proje kartlarında, proje detaylarında ve görsellerde geçmez.** Gerekirse "otomotiv tedarikçisi", "iş yerim", "fabrika" denir. İşveren adı yalnızca `ozgecmis.html`'deki deneyim bölümünde yer alır. İstisna: Kemal'in onayladığı canlı adreslerin alan adında geçebilir (`po-rehberi`, `basket-takim`; 27.11.2026). Metinde yine geçmez.
 2. Şirket verisi, şirket logosu, iç doküman adı/numarası, çalışan ya da meslektaş adı yok. Ekran görüntüleri yalnızca örnek veriyle; görselde "örnek veri" etiketi.
-3. Çocukla ilgili projelerde öğrencinin adı, okulu, yaşı, fotoğrafı ve sağlık ya da kişisel bilgisi yok. Bu projelere canlı link verilmez (karar değişirse bu madde güncellenir).
+3. Çocukla ilgili projelerde öğrencinin adı, okulu, yaşı, fotoğrafı ve sağlık ya da kişisel bilgisi site metinlerinde yok. Canlı link yalnızca Kemal'in onayladığı projelere verilir: şu an Ders Defteri (27.11.2026). Yeni link Kemal'e sorulmadan eklenmez.
 4. Telefon numarası sitede yok (yalnızca PDF'te). İletişim: e-posta, LinkedIn, GitHub.
 5. Satış rakamı, gelir, maaş yazılmaz.
 6. Aile üyelerinin adları, ev adresi, kişisel konular yok.
@@ -100,4 +101,4 @@ Kod değişikliği gerekmez; sayfalar yeni kaydı kendiliğinden gösterir. Kod 
 - [ ] PDF özgeçmiş güncellenip `assets/Kemal_Beydilli_CV.pdf` olarak eklenecek (yazım düzeltmeleri, Country Manager, YBS, projeler).
 - [ ] Vitrin projeleri için örnek veriyle ekran görüntüleri.
 - [ ] Alan adı (isteğe bağlı, sonra).
-- [ ] Ders Defteri için canlı link kararı (şu an: link yok).
+- [x] Ders Defteri için canlı link kararı: link verildi (27.11.2026).
