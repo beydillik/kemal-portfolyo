@@ -16,7 +16,7 @@ Ana mesaj: **"Rakamları okuyan, araçlarını kendi yazan bir controller."** Fi
 - Tasarım: **Bant tasarım sistemi**, `kemalwebsablon-genel` skill'i. Palet **`indigo`** (sabit), düzen **`tanitim`**. Açık/Koyu düğmesi var, palet seçici yok.
   - Bant dosyaları (`bant-tema.css`, `bant-tema.js`, `bant-temel.css`) kökte durur ve **elle değiştirilmez**. Projeye özgü stil sayfanın kendi `<style>` bloğuna, yalnızca `var(--…)` tokenlarıyla yazılır.
   - Teslimden önce skill'in `scripts/kontrol.py` betiği çalıştırılır; çıkış kodu 0 olmalı.
-- İki dil: **TR / EN**. Varsayılan dil tarayıcı diline göre seçilir, bandın sağındaki düğmeyle değişir, seçim `localStorage`'da saklanır (try/catch ile).
+- İki dil: **TR / EN**. Varsayılan dil **EN**, varsayılan görünüm **Açık** (kullanıcının kayıtlı seçimi varsa o geçerli). Dil bandın sağındaki düğmeyle değişir, seçim `localStorage`'da saklanır (try/catch ile).
 - Tarih biçimi TR'de `aa.yyyy` / EN'de `Mon yyyy`. Binlik nokta, ondalık virgül (TR).
 
 ## 3. Veri odaklı yapı (en önemli kural)
