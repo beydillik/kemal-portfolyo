@@ -376,7 +376,9 @@
       }))),
       o.ilgi_alanlari ? bolum(t("ilgi"), h("p", { class: "metin", text: (o.ilgi_alanlari[dil] || o.ilgi_alanlari.tr).join(" · ") })) : null);
 
-    ekle(kap, h("article", { class: "kart cv" }, ust, rakamlar, h("div", { class: "cv-govde" }, ana, yan)));
+    /* CV kâğıdı site görünümünden bağımsız: her zaman sitenin paletinin açık tokenları (palet adı <html>'den okunur). */
+    ekle(kap, h("article", { class: "kart cv", "data-palet": kok.getAttribute("data-palet"), "data-theme": "acik" },
+      ust, rakamlar, h("div", { class: "cv-govde" }, ana, yan)));
   }
 
   /* ---------- akış ---------- */
