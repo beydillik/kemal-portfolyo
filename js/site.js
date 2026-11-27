@@ -355,9 +355,10 @@
     }) : [];
     var ana = h("div", { class: "cv-ana" },
       bolum(t("hakkimda"), h("p", { class: "metin", text: sec(o.hakkimda) })),
-      bolum(t("deneyim"), deneyim),
-      projeler.length ? bolum(t("secili_projeler"), [h("ul", { class: "cv-projeler" }, projeler),
-        h("a", { class: "cv-tum", href: "projeler.html", text: t("tum_projeler") + " →" })]) : null);
+      bolum(t("deneyim"), deneyim));
+    /* Seçili projeler iki sütunun altında, tam genişlikte; yazdırmada ayrı sayfada başlar. */
+    var alt = projeler.length ? h("div", { class: "cv-alt" }, bolum(t("secili_projeler"), [h("ul", { class: "cv-projeler" }, projeler),
+      h("a", { class: "cv-tum", href: "projeler.html", text: t("tum_projeler") + " →" })])) : null;
 
     /* Yan sütun: yetkinlik, eğitim, sertifika, dil, ilgi */
     var yan = h("aside", { class: "cv-yan" },
@@ -378,7 +379,7 @@
 
     /* CV kâğıdı site görünümünden bağımsız: her zaman sitenin paletinin açık tokenları (palet adı <html>'den okunur). */
     ekle(kap, h("article", { class: "kart cv", "data-palet": kok.getAttribute("data-palet"), "data-theme": "acik" },
-      ust, rakamlar, h("div", { class: "cv-govde" }, ana, yan)));
+      ust, rakamlar, h("div", { class: "cv-govde" }, ana, yan), alt));
   }
 
   /* ---------- akış ---------- */
