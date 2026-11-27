@@ -22,28 +22,85 @@
 .bolum-baslik{margin:0;font-family:var(--font-display);font-weight:700;font-size:22px}
 .metin{margin:var(--space-2) 0 0;max-width:72ch}
 .not{margin:0;font-size:13.5px;color:var(--ink-2)}
-#ozgecmis{display:grid;gap:var(--space-5)}
-.unvan{margin:0;color:var(--ink-2);font-size:16px}
+#ozgecmis{max-width:1040px;width:100%;margin:0 auto}
+.cv{overflow:hidden}
+.cv-ust{display:grid;grid-template-columns:1fr auto;gap:var(--space-5);align-items:start;padding:var(--space-6) var(--space-6) var(--space-5)}
+.cv-kimlik{display:flex;flex-direction:column;gap:var(--space-2);min-width:0}
+.cv-kimlik h1{margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,44px);line-height:1.05;letter-spacing:-.8px}
+.cv-unvan{margin:0;font-size:17px;font-weight:600;color:var(--ink)}
+.cv-slogan{margin:0;color:var(--ink-2);font-size:15.5px;max-width:52ch}
+.cv-konum{margin:0;font-size:13.5px;color:var(--ink-2)}
+.cv-kimlik .eylem{margin-top:var(--space-2)}
+.cv-foto{width:168px;height:168px;object-fit:cover;border-radius:var(--radius-md);border:1px solid var(--line);background:var(--box);display:block}
+.cv-iletisim .iletisim{list-style:none;margin:var(--space-2) 0 0;padding:0;display:flex;flex-wrap:wrap;gap:var(--space-2) var(--space-5)}
+.cv-iletisim li{display:flex;gap:var(--space-2);align-items:baseline;overflow-wrap:anywhere;min-width:0;font-size:14px}
+.cv-iletisim .etiket{margin:0;font-size:12px}
+.cv-rakamlar{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--box)}
+.cv-rakam{padding:var(--space-4) var(--space-5);display:flex;flex-direction:column;gap:2px;border-left:1px solid var(--line-2)}
+.cv-rakam:first-child{border-left:0}
+.cv-rakam b{font-family:var(--font-mono);font-weight:500;font-size:24px;color:var(--ink)}
+.cv-rakam span{font-size:13px;color:var(--ink-2)}
+.cv-govde{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(0,1fr)}
+.cv-ana{padding:var(--space-5) var(--space-6);display:grid;gap:var(--space-6);align-content:start}
+.cv-yan{padding:var(--space-5) var(--space-6);display:grid;gap:var(--space-5);align-content:start;border-left:1px solid var(--line);background:var(--box)}
+.cv-baslik{margin:0 0 var(--space-3);padding-bottom:var(--space-2);border-bottom:1px solid var(--line);font-family:var(--font-display);font-weight:700;font-size:19px}
+.metin{margin:0}
+.zaman-cizgisi{list-style:none;margin:0;padding:0}
+.is{position:relative;padding:0 0 var(--space-5) 24px}
+.is::before{content:"";position:absolute;left:4px;top:12px;bottom:0;width:2px;background:var(--line)}
+.is::after{content:"";position:absolute;left:0;top:6px;width:10px;height:10px;border-radius:50%;background:var(--accent)}
+.is:last-child{padding-bottom:0}
+.is:last-child::before{display:none}
 .is-bas{display:flex;justify-content:space-between;align-items:baseline;gap:var(--space-3);flex-wrap:wrap}
 .is h3{margin:0;font-family:var(--font-display);font-weight:700;font-size:17px}
-.sirket{margin:2px 0 0;color:var(--ink-2);font-weight:500}
-.maddeler{margin:var(--space-2) 0 0;padding-left:20px}
-.maddeler li{margin:4px 0}
-.is .not{margin-top:var(--space-2)}
-.iki-sutun{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:var(--space-5);align-items:start}
-.iletisim{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:var(--space-2) var(--space-5)}
-.iletisim li{display:flex;gap:var(--space-2);align-items:baseline;overflow-wrap:anywhere;min-width:0}
-.iletisim .etiket{margin:0}
-.zaman{list-style:none;margin:var(--space-2) 0 0;padding:0}
-.zaman li{display:flex;justify-content:space-between;gap:var(--space-3);padding:4px 0}
-@media (max-width:640px){.iki-sutun{grid-template-columns:1fr}}
+.sirket{margin:2px 0 0;color:var(--ink-2);font-weight:600}
+.maddeler{margin:var(--space-2) 0 0;padding-left:18px}
+.maddeler li{margin:3px 0}
+.is-kisa h3{font-size:15px}
+.is-kisa .maddeler{color:var(--ink-2)}
+.cv-projeler{list-style:none;margin:0;padding:0;display:grid;gap:var(--space-3)}
+.cv-projeler li{display:flex;flex-direction:column;gap:2px}
+.cv-projeler a{font-weight:600}
+.cv-projeler span{color:var(--ink-2);font-size:14px}
+.cv-tum{display:inline-flex;align-items:center;min-height:44px;margin-top:var(--space-2);font-weight:600}
+.yetkinlik{margin-bottom:var(--space-3)}
+.yetkinlik:last-child{margin-bottom:0}
+.yetkinlik .teknoloji li{background:var(--card)}
+.yan-liste{list-style:none;margin:0;padding:0;display:grid;gap:var(--space-3)}
+.yan-liste li{display:flex;flex-direction:column;gap:1px}
+.yan-liste li span{font-size:14px;color:var(--ink-2)}
+.yan-liste li.satir{flex-direction:row;justify-content:space-between;gap:var(--space-3)}
+.yan-liste .tarih{font-size:12.5px}
+@media (max-width:860px){
+  .cv-govde{grid-template-columns:1fr}
+  .cv-yan{border-left:0;border-top:1px solid var(--line)}
+  .cv-rakamlar{grid-template-columns:repeat(2,1fr)}
+  .cv-rakam:nth-child(3){border-left:0}
+  .cv-rakam:nth-child(n+3){border-top:1px solid var(--line-2)}
+}
+@media (max-width:640px){
+  .cv-ust{padding:var(--space-5) var(--space-4) var(--space-4);gap:var(--space-4)}
+  .cv-foto{width:92px;height:92px}
+  .cv-iletisim .iletisim{flex-direction:column;gap:6px}
+  .cv-iletisim .etiket{flex:none;min-width:64px}
+  .cv-ana,.cv-yan{padding:var(--space-5) var(--space-4)}
+  .cv-rakam{padding:var(--space-3) var(--space-4)}
+}
 @media print{
-  .band,.bar,.alt-bant,.eylem,.pdf-not{display:none}
-  body{background:var(--card)}
+  @page{size:A4;margin:12mm}
+  .band,.bar,.alt-bant,.eylem,.pdf-not,.cv-tum{display:none}
+  body{background:var(--card);font-size:12.5px}
   .govde{padding:0;max-width:none}
-  .kart{box-shadow:none;border:0;break-inside:auto}
+  .kart{box-shadow:none;border:0}
+  .cv-ust{padding:0 0 12px}
+  .cv-foto{width:120px;height:120px}
+  .cv-govde{grid-template-columns:1.75fr 1fr}
+  .cv-ana{padding:12px 16px 0 0}
+  .cv-yan{padding:12px 0 0 16px;border-top:0;border-left:1px solid var(--line)}
+  .cv-rakamlar{grid-template-columns:repeat(4,1fr)}
+  .cv-rakam:nth-child(n+3){border-top:0}
+  .cv-rakam:nth-child(3){border-left:1px solid var(--line-2)}
   .is{break-inside:avoid}
-  .iki-sutun{grid-template-columns:1fr 1fr}
   a{color:var(--ink);text-decoration:none}
 }
 </style>

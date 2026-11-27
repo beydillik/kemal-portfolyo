@@ -15,8 +15,15 @@
       "github": "https://github.com/beydillik",
       "site": "https://beydillik.github.io/kemal-portfolyo/"
     },
+    "foto": "assets/foto/kemal-beydilli.jpg",
     "not": "Telefon numarası sitede yayımlanmaz; yalnızca PDF özgeçmişte yer alır."
   },
+  "one_cikanlar": [
+    { "deger": "15+", "tr": "yıl finansal raporlama", "en": "years in financial reporting" },
+    { "deger": "10+", "tr": "yıl otomotiv sektörü", "en": "years in automotive" },
+    { "deger": "SMMM", "tr": "2016'dan beri", "en": "CPA since 2016" },
+    { "deger": "BSc", "tr": "Yazılım Mühendisliği, 2025", "en": "Software Engineering, 2025" }
+  ],
   "hakkimda": {
     "tr": "Otomotiv sektöründe 10 yılı aşkın deneyime sahip bir Plant Controller'ım; finansal raporlamada 15 yılı aşkın geçmişim var. SAP FI/CO, üretim maliyetleri, bütçe ve ay sonu kapanış günlük işim. 2016'dan beri SMMM'yim. 2025'te yazılım mühendisliği lisansını tamamladım ve bu iki alanı birleştiriyorum: ekiplerin her gün kullandığı raporlama araçlarını, rehberleri ve küçük uygulamaları yapay zekâ destekli geliştirme ile kendim kuruyorum.",
     "en": "I'm a Plant Controller with more than ten years in the automotive industry and more than fifteen years in financial reporting. SAP FI/CO, production costing, budgeting and month-end close are my daily work, and I've been a certified public accountant (SMMM) since 2016. In 2025 I completed a degree in software engineering, and I now combine the two: I build the reporting tools, guides and small apps my teams use every day, with AI-assisted development."

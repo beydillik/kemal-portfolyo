@@ -20,7 +20,7 @@
       geri: "Tüm projeler", bulunamadi_baslik: "Proje bulunamadı",
       bulunamadi: "Bu adreste gösterilecek bir proje yok. Tüm projeler listesinden seçebilirsiniz.",
       ornek_veri: "Ekran görüntüsü örnek veriyle hazırlanmıştır.",
-      hakkimda: "Hakkımda", sertifikalar: "Sertifikalar", yetkinlikler: "Yetkinlikler",
+      hakkimda: "Profil", secili_projeler: "Seçili projeler", sertifikalar: "Sertifikalar", yetkinlikler: "Yetkinlikler",
       diller: "Diller", ilgi: "İlgi alanları", not_ort: "Not ortalaması",
       pdf_indir: "PDF indir", yazdir: "Yazdır", pdf_yok: "PDF sürümü hazırlanıyor; bu sayfayı yazdırabilirsiniz.",
       devam: "devam ediyor", guncelleme: "Son güncelleme",
@@ -42,7 +42,7 @@
       geri: "All projects", bulunamadi_baslik: "Project not found",
       bulunamadi: "There is no project to show at this address. You can pick one from the project list.",
       ornek_veri: "Screenshot taken with sample data.",
-      hakkimda: "About", sertifikalar: "Certifications", yetkinlikler: "Skills",
+      hakkimda: "Profile", secili_projeler: "Selected projects", sertifikalar: "Certifications", yetkinlikler: "Skills",
       diller: "Languages", ilgi: "Interests", not_ort: "GPA",
       pdf_indir: "Download PDF", yazdir: "Print", pdf_yok: "The PDF version is being updated; you can print this page.",
       devam: "present", guncelleme: "Last updated",
@@ -313,60 +313,70 @@
 
   function ozgecmisSayfasi() {
     var o = veri.ozgecmis, k = o.kisi;
-    document.title = t("nav_ozgecmis") + " · " + k.ad;
+    document.title = k.ad + " · " + t("nav_ozgecmis");
     var kap = bosalt($("ozgecmis"));
 
+    function bolum(baslik, icerik, sinif) {
+      return h("section", { class: "cv-bolum" + (sinif ? " " + sinif : "") }, h("h2", { class: "cv-baslik", text: baslik }), icerik);
+    }
+
+    /* Üst: ad, unvan, iletişim, eylemler + sağda fotoğraf */
     var yazdir = h("button", { type: "button", class: "dugme", text: t("yazdir") });
     yazdir.addEventListener("click", function () { window.print(); });
-    var eylem = h("div", { class: "eylem" },
-      veri.pdfVar ? h("a", { class: "dugme birincil", href: o.pdf, download: "", text: t("pdf_indir") }) : null, yazdir);
-    var iletisim = h("div");
+    var iletisim = h("div", { class: "cv-iletisim" });
     iletisimCiz(iletisim, true);
-
-    ekle(kap, h("section", { class: "kart" },
-      h("div", { class: "kart-bas" },
+    var ust = h("header", { class: "cv-ust" },
+      h("div", { class: "cv-kimlik" },
         h("h1", { text: k.ad }),
-        h("p", { class: "unvan", text: sec(k.unvan) + " · " + sec(k.konum) }),
+        h("p", { class: "cv-unvan", text: sec(k.unvan) }),
+        h("p", { class: "cv-slogan", text: sec(k.slogan) }),
+        h("p", { class: "cv-konum", text: sec(k.konum) }),
         iletisim,
-        eylem,
+        h("div", { class: "eylem" },
+          veri.pdfVar ? h("a", { class: "dugme birincil", href: o.pdf, download: "", text: t("pdf_indir") }) : null, yazdir),
         veri.pdfVar ? null : h("p", { class: "not pdf-not", text: t("pdf_yok") })),
-      h("div", { class: "kart-bolum" }, h("h2", { class: "panel-baslik", text: t("hakkimda") }), h("p", { class: "metin", text: sec(o.hakkimda) }))));
+      k.foto ? h("img", { class: "cv-foto", src: k.foto, alt: k.ad, width: "480", height: "480" }) : null);
 
-    ekle(kap, h("section", { class: "kart" },
-      h("div", { class: "kart-bolum" }, h("h2", { class: "panel-baslik", text: t("deneyim") })),
-      o.deneyim.map(function (d) {
-        return h("div", { class: "kart-bolum is" },
-          h("div", { class: "is-bas" },
-            h("div", null, h("h3", { text: sec(d.unvan) }), d.sirket ? h("p", { class: "sirket", text: d.sirket }) : null),
-            h("span", { class: "tarih", text: aralik(d.baslangic, d.bitis) })),
-          h("ul", { class: "maddeler" }, (d.maddeler[dil] || d.maddeler.tr || []).map(function (x) { return h("li", { text: x }); })));
-      })));
+    var rakamlar = (o.one_cikanlar || []).length ? h("div", { class: "cv-rakamlar" }, o.one_cikanlar.map(function (r) {
+      return h("div", { class: "cv-rakam" }, h("b", { text: r.deger }), h("span", { text: sec(r) }));
+    })) : null;
 
-    ekle(kap, h("div", { class: "iki-sutun" },
-      h("section", { class: "kart" },
-        h("div", { class: "kart-bolum" }, h("h2", { class: "panel-baslik", text: t("egitim") })),
-        o.egitim.map(function (e) {
-          return h("div", { class: "kart-bolum is" },
-            h("div", { class: "is-bas" }, h("div", null, h("h3", { text: sec(e.bolum) }), h("p", { class: "sirket", text: e.okul })),
-              h("span", { class: "tarih", text: aralik(e.baslangic, e.bitis) })),
-            e.not_ortalamasi ? h("p", { class: "not", text: t("not_ort") + ": " + e.not_ortalamasi }) : null);
-        }),
-        (o.sertifikalar || []).length ? [h("div", { class: "kart-bolum" }, h("h2", { class: "panel-baslik", text: t("sertifikalar") }))].concat(o.sertifikalar.map(function (s) {
-          return h("div", { class: "kart-bolum is" },
-            h("div", { class: "is-bas" }, h("h3", { text: sec(s.ad) }), h("span", { class: "tarih", text: s.yil })),
-            s.detay ? h("p", { class: "not", text: sec(s.detay) }) : null);
-        })) : null),
-      h("section", { class: "kart" },
-        h("div", { class: "kart-bolum" }, h("h2", { class: "panel-baslik", text: t("yetkinlikler") })),
-        o.yetkinlikler.map(function (y) {
-          return h("div", { class: "kart-bolum" }, h("p", { class: "etiket", text: sec(y.grup) }), teknolojiler(y.ogeler));
-        }),
-        h("div", { class: "kart-bolum" }, h("h2", { class: "panel-baslik", text: t("diller") }),
-          h("ul", { class: "zaman" }, o.diller.map(function (d) {
-            return h("li", null, h("span", { text: sec(d.dil) }), d.seviye ? h("span", { class: "not", text: sec(d.seviye) }) : null);
-          }))),
-        o.ilgi_alanlari ? h("div", { class: "kart-bolum" }, h("h2", { class: "panel-baslik", text: t("ilgi") }),
-          h("p", { class: "metin", text: (o.ilgi_alanlari[dil] || o.ilgi_alanlari.tr).join(" · ") })) : null)));
+    /* Ana sütun: profil, deneyim, seçili projeler */
+    var deneyim = h("ol", { class: "zaman-cizgisi" }, o.deneyim.map(function (d) {
+      return h("li", { class: "is" + (d.kisa ? " is-kisa" : "") },
+        h("div", { class: "is-bas" },
+          h("div", null, h("h3", { text: sec(d.unvan) }), d.sirket ? h("p", { class: "sirket", text: d.sirket }) : null),
+          h("span", { class: "tarih", text: aralik(d.baslangic, d.bitis) })),
+        h("ul", { class: "maddeler" }, (d.maddeler[dil] || d.maddeler.tr || []).map(function (x) { return h("li", { text: x }); })));
+    }));
+    var projeler = veri.projeler ? gorunur("vitrin").map(function (p) {
+      var m = p[dil] || p.tr;
+      return h("li", null, h("a", { href: "proje.html?id=" + encodeURIComponent(p.id), text: m.baslik }), h("span", { text: m.ozet }));
+    }) : [];
+    var ana = h("div", { class: "cv-ana" },
+      bolum(t("hakkimda"), h("p", { class: "metin", text: sec(o.hakkimda) })),
+      bolum(t("deneyim"), deneyim),
+      projeler.length ? bolum(t("secili_projeler"), [h("ul", { class: "cv-projeler" }, projeler),
+        h("a", { class: "cv-tum", href: "projeler.html", text: t("tum_projeler") + " →" })]) : null);
+
+    /* Yan sütun: yetkinlik, eğitim, sertifika, dil, ilgi */
+    var yan = h("aside", { class: "cv-yan" },
+      bolum(t("yetkinlikler"), o.yetkinlikler.map(function (y) {
+        return h("div", { class: "yetkinlik" }, h("p", { class: "etiket", text: sec(y.grup) }), teknolojiler(y.ogeler));
+      })),
+      bolum(t("egitim"), h("ul", { class: "yan-liste" }, o.egitim.map(function (e) {
+        return h("li", null, h("b", { text: sec(e.bolum) }), h("span", { text: e.okul }),
+          h("span", { class: "tarih", text: aralik(e.baslangic, e.bitis) + (e.not_ortalamasi ? " · " + t("not_ort") + " " + e.not_ortalamasi : "") }));
+      }))),
+      (o.sertifikalar || []).length ? bolum(t("sertifikalar"), h("ul", { class: "yan-liste" }, o.sertifikalar.map(function (s) {
+        return h("li", null, h("b", { text: sec(s.ad) }), s.detay ? h("span", { text: sec(s.detay) }) : null, h("span", { class: "tarih", text: s.yil }));
+      }))) : null,
+      bolum(t("diller"), h("ul", { class: "yan-liste" }, o.diller.map(function (d) {
+        return h("li", { class: "satir" }, h("b", { text: sec(d.dil) }), d.seviye ? h("span", { text: sec(d.seviye) }) : null);
+      }))),
+      o.ilgi_alanlari ? bolum(t("ilgi"), h("p", { class: "metin", text: (o.ilgi_alanlari[dil] || o.ilgi_alanlari.tr).join(" · ") })) : null);
+
+    ekle(kap, h("article", { class: "kart cv" }, ust, rakamlar, h("div", { class: "cv-govde" }, ana, yan)));
   }
 
   /* ---------- akış ---------- */
@@ -394,7 +404,7 @@
     dilKur();
     ortak();
     var isler = [jsonAl("data/ozgecmis.json").then(function (d) { veri.ozgecmis = d; })];
-    if (sayfa !== "ozgecmis") isler.push(jsonAl("data/projeler.json").then(function (d) { veri.projeler = d; }));
+    isler.push(jsonAl("data/projeler.json").then(function (d) { veri.projeler = d; }));
     Promise.all(isler)
       .then(function () { return sayfa === "ozgecmis" ? pdfKontrol(veri.ozgecmis.pdf).then(function (v) { veri.pdfVar = v; }) : null; })
       .then(ciz)
