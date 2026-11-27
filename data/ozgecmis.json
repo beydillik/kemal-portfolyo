@@ -1,0 +1,147 @@
+{
+  "surum": 1,
+  "guncelleme": "2026-11-27",
+  "kisi": {
+    "ad": "Kemal Beydilli",
+    "konum": { "tr": "Manisa, Türkiye", "en": "Manisa, Türkiye" },
+    "unvan": { "tr": "Plant Controller · SMMM (CPA) · Yazılım Mühendisi", "en": "Plant Controller · CPA · Software Engineer" },
+    "slogan": {
+      "tr": "Rakamları okuyan, araçlarını kendi yazan bir controller.",
+      "en": "A controller who reads the numbers and builds his own tools."
+    },
+    "iletisim": {
+      "eposta": "kembeydilli@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/kemal-beydilli-5424ba1b/",
+      "github": "https://github.com/beydillik"
+    },
+    "not": "Telefon numarası sitede yayımlanmaz; yalnızca PDF özgeçmişte yer alır."
+  },
+  "hakkimda": {
+    "tr": "Otomotiv sektöründe 10 yılı aşkın deneyime sahip bir Plant Controller'ım; finansal raporlamada 15 yılı aşkın geçmişim var. SAP FI/CO, üretim maliyetleri, bütçe ve ay sonu kapanış günlük işim. 2016'dan beri SMMM'yim. 2025'te yazılım mühendisliği lisansını tamamladım ve bu iki alanı birleştiriyorum: ekiplerin her gün kullandığı raporlama araçlarını, rehberleri ve küçük uygulamaları yapay zekâ destekli geliştirme ile kendim kuruyorum.",
+    "en": "I'm a Plant Controller with more than ten years in the automotive industry and more than fifteen years in financial reporting. SAP FI/CO, production costing, budgeting and month-end close are my daily work, and I've been a certified public accountant (SMMM) since 2016. In 2025 I completed a degree in software engineering, and I now combine the two: I build the reporting tools, guides and small apps my teams use every day, with AI-assisted development."
+  },
+  "deneyim": [
+    {
+      "baslangic": "2016-12", "bitis": null,
+      "sirket": "Mubea",
+      "unvan": { "tr": "Plant Controller", "en": "Plant Controller" },
+      "maddeler": {
+        "tr": [
+          "Almanya'daki Chassis Division Controller'a ve Türkiye Country Manager'a raporluyorum; Manisa Fabrika Yönetim Ekibi üyesiyim.",
+          "Plant Controller, SAP Plant Coordinator ve CO Key User rollerini birlikte yürütüyorum.",
+          "Grup politikalarına uygun bütçe ve tahminler, ay sonu kapanışı ve yönetim raporlaması.",
+          "SAP ve SAP BW ile kontrol faaliyetleri; KPI raporlaması; üç aylık BCS raporları (bilanço ve kâr-zarar).",
+          "Kârlılık, maliyet ve stok analizleri; verimlilik raporlarının kurulması ve geliştirilmesi.",
+          "Pozisyon boş kaldığı dönemde yaklaşık 6–7 ay Mali İşler Müdürü görevini de üstlendim.",
+          "Raporlama ve süreç ihtiyaçları için web tabanlı iç araçlar geliştiriyorum (bkz. Projeler)."
+        ],
+        "en": [
+          "Report to the Chassis Division Controller at headquarters in Germany and to the Country Manager for Türkiye; member of the Manisa Plant Management Team.",
+          "Combine the roles of Plant Controller, SAP Plant Coordinator and CO Key User.",
+          "Budgets and forecasts in line with group policies, month-end close and management reporting.",
+          "Control activities in SAP and SAP BW; KPI reporting; quarterly BCS reports (balance sheet and P&L).",
+          "Profitability, cost and inventory analysis; building and improving productivity reports.",
+          "Also covered the Finance Manager role for about six to seven months while it was vacant.",
+          "Build web-based internal tools for reporting and process needs (see Projects)."
+        ]
+      }
+    },
+    {
+      "baslangic": "2015-03", "bitis": "2016-12",
+      "sirket": "ZF Lemförder",
+      "unvan": { "tr": "Financial Controller", "en": "Financial Controller" },
+      "maddeler": {
+        "tr": [
+          "Malzeme maliyeti yönetimi ve SAP'de muhasebe/maliyetle ilgili malzeme bakım süreçleri.",
+          "SAP ve SAP BW ile aylık maliyet kontrolü; yıllık, revize ve uzun vadeli bütçeler.",
+          "Gerçekleşen–planlanan maliyet analizi; aylık sapma raporları ve SAP CO-PA kârlılık raporları.",
+          "Finans ve maliyet kontrolüyle ilgili yeni raporlar kurulması, mevcutların geliştirilmesi."
+        ],
+        "en": [
+          "Material cost management and accounting/costing-related material master processes in SAP.",
+          "Monthly cost control in SAP and SAP BW; annual, revised and long-term budgets.",
+          "Actual vs. planned cost analysis; monthly variance reports and SAP CO-PA profitability reports.",
+          "Built new finance and cost-control reports and improved existing ones."
+        ]
+      }
+    },
+    {
+      "baslangic": "2011-09", "bitis": "2015-03",
+      "sirket": "Çimentaş (Cementir)",
+      "unvan": { "tr": "Planlama, Bütçe ve Kontrol Uzmanı", "en": "Planning, Budget & Control Specialist" },
+      "maddeler": {
+        "tr": [
+          "Aylık maliyet kontrolü; muhasebe kayıtlarında doğru masraf yeri ve maliyet unsuru kullanımının denetimi.",
+          "Yıllık, revize ve uzun vadeli bütçeler; üç aylık sektör kıyaslama raporları.",
+          "Gerçekleşen–planlanan raporları ve sunumları; yeni raporların kurulması."
+        ],
+        "en": [
+          "Monthly cost control; checking that accounting entries use the right cost centers and cost elements.",
+          "Annual, revised and long-term budgets; quarterly industry benchmark reports.",
+          "Actual vs. plan reports and presentations; building new reports."
+        ]
+      }
+    },
+    {
+      "baslangic": "2009-11", "bitis": "2011-08",
+      "sirket": "Tesco Kipa",
+      "unvan": { "tr": "Finansal Analist", "en": "Financial Analyst" },
+      "maddeler": {
+        "tr": [
+          "Yeni mağaza ve projeler için fizibilite çalışmaları; yıllık bütçe ve uzun vadeli planlar.",
+          "Özellikle yatırımlarda (capex) gerçekleşen–planlanan maliyet analizi.",
+          "İngiltere yönetimine IFRS bazlı aylık finansal raporlar."
+        ],
+        "en": [
+          "Feasibility studies for new stores and projects; annual budgets and long-term plans.",
+          "Actual vs. planned cost analysis, especially for capex.",
+          "Monthly IFRS-based financial reports for UK management."
+        ]
+      }
+    },
+    {
+      "baslangic": "2007-08", "bitis": "2009-11",
+      "sirket": "Tesco Kipa",
+      "unvan": { "tr": "Lojistik Planlama Uzmanı", "en": "Logistics Planning Specialist" },
+      "maddeler": {
+        "tr": ["Dağıtım merkezi günlük taşıma planı, lojistik bütçe ve verimlilik takibi, yeni lojistik raporlama sistemleri."],
+        "en": ["Daily distribution-center transport planning, logistics budget and efficiency tracking, new logistics reporting systems."]
+      }
+    },
+    {
+      "baslangic": "2004-09", "bitis": "2007-07",
+      "sirket": null,
+      "kisa": true,
+      "unvan": { "tr": "Kariyer başlangıcı", "en": "Early career" },
+      "maddeler": {
+        "tr": ["Mapfre Genel Sigorta'da yönetici adayı (2006–2007) ve Turkcell Global Bilgi'de müşteri hizmetleri (2004–2005)."],
+        "en": ["Management trainee at Mapfre Genel Sigorta (2006–2007) and customer service at Turkcell Global Bilgi (2004–2005)."]
+      }
+    }
+  ],
+  "egitim": [
+    { "okul": "Ankara Üniversitesi (Açıköğretim)", "bolum": { "tr": "Yönetim Bilişim Sistemleri, Lisans", "en": "Management Information Systems, BSc" }, "baslangic": "2023", "bitis": null, "not_ortalamasi": null },
+    { "okul": "Manisa Celal Bayar Üniversitesi", "bolum": { "tr": "Yazılım Mühendisliği, Lisans", "en": "Software Engineering, BSc" }, "baslangic": "2021", "bitis": "2025", "not_ortalamasi": "3,54 / 4" },
+    { "okul": "Yaşar Üniversitesi", "bolum": { "tr": "İşletme Mühendisliği, Yüksek Lisans", "en": "Business Engineering, MSc" }, "baslangic": "2013", "bitis": "2015", "not_ortalamasi": "3,88 / 4" },
+    { "okul": "Ege Üniversitesi", "bolum": { "tr": "İşletme, Lisans", "en": "Business Administration, BA" }, "baslangic": "1999", "bitis": "2004", "not_ortalamasi": "81 / 100" }
+  ],
+  "sertifikalar": [
+    { "ad": { "tr": "Serbest Muhasebeci Mali Müşavir (SMMM) — TÜRMOB", "en": "Certified Public Accountant (SMMM) — TÜRMOB" }, "yil": "2016", "detay": { "tr": "Yeterlilik sınavı 81/100 (Kasım 2015)", "en": "Proficiency exam 81/100 (Nov 2015)" } }
+  ],
+  "yetkinlikler": [
+    { "grup": { "tr": "Finans & Controlling", "en": "Finance & Controlling" }, "ogeler": ["Financial reporting", "Variance analysis", "Budgeting & forecasting", "Product costing", "Profitability analysis", "Month-end close", "IFRS / TFRS / VUK"] },
+    { "grup": { "tr": "ERP & BI", "en": "ERP & BI" }, "ogeler": ["SAP CO", "SAP FI", "SAP BW", "S/4HANA key user", "Power BI (Power Query, Power Pivot)", "Excel dashboards"] },
+    { "grup": { "tr": "Yazılım", "en": "Software" }, "ogeler": ["Python", "SQL", "Excel VBA", "HTML / CSS / JavaScript", "Git & GitHub", "Firebase"] },
+    { "grup": { "tr": "Yapay zekâ ile geliştirme", "en": "AI-assisted development" }, "ogeler": ["Claude Code", "AI skills & agent workflows", "Prompt design", "Static web apps (Netlify, GitHub Pages)"] }
+  ],
+  "diller": [
+    { "dil": { "tr": "Türkçe", "en": "Turkish" }, "seviye": { "tr": "Anadil", "en": "Native" } },
+    { "dil": { "tr": "İngilizce", "en": "English" }, "seviye": null }
+  ],
+  "ilgi_alanlari": { "tr": ["Basketbol", "Teknoloji", "Yüzme ve yürüyüş", "Müzik"], "en": ["Basketball", "Technology", "Swimming & walking", "Music"] },
+  "pdf": "assets/Kemal_Beydilli_CV.pdf",
+  "acik_noktalar": [
+    "İngilizce seviyesi (ör. B2) yazılacak.",
+    "PDF özgeçmiş bu dosyayla eşitlenecek: yazım düzeltmeleri, raporlama hattı (Country Manager), YBS ve projeler bölümü."
+  ]
+}
