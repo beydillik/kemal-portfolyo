@@ -1,0 +1,78 @@
+/* bant-temel.css — Bant iskeleti ve ortak bileşenler. Renkler bant-tema.css'ten gelir; burada sabit renk yok. */
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--font-sans);font-size:15px;line-height:1.5;min-height:100vh;display:flex;flex-direction:column}
+button,input,select,textarea{font:inherit;color:inherit}
+a{color:var(--link)}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+
+/* Üst bant */
+.band{min-height:var(--band-h);display:flex;align-items:center;justify-content:space-between;gap:var(--space-4);flex-wrap:wrap;padding:10px var(--space-6);background:var(--band);border-bottom:3px solid var(--accent);color:var(--band-ink)}
+.band-ad{display:flex;align-items:center;gap:10px;margin:0;font-family:var(--font-display);font-weight:700;font-size:24px;line-height:1.15;letter-spacing:-.3px}
+.band-nokta{width:10px;height:10px;border-radius:50%;background:var(--accent);flex:none}
+.band-alt{margin:0;font-size:13.5px;color:var(--band-ink-2);padding-left:20px}
+
+/* Bölüm çubuğu */
+.bar{min-height:var(--bar-h);display:flex;gap:var(--space-1);padding:0 var(--space-4);background:var(--band-2);font-family:var(--font-display);font-weight:500;overflow-x:auto}
+.bar a,.bar button{display:flex;align-items:center;padding:0 14px;color:var(--band-ink-2);text-decoration:none;background:none;border:0;border-bottom:3px solid transparent;cursor:pointer;white-space:nowrap}
+.bar [aria-current="page"],.bar [aria-selected="true"]{color:var(--band-ink);font-weight:700;border-bottom-color:var(--accent)}
+.bar :focus-visible{outline-color:var(--band-ink);outline-offset:-4px}
+
+/* Gövde ve alt bant */
+.govde{flex:1;width:100%;padding:var(--space-5) var(--space-6);display:grid;gap:var(--space-5);align-content:start}
+.alt-bant{min-height:var(--footer-h);display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;padding:4px var(--space-4);background:var(--footer);color:var(--ink-2);font-size:13px}
+.alt-bant .ayrac{width:1px;height:12px;background:var(--line-3)}
+
+/* Kart */
+.kart{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);box-shadow:var(--shadow-card);min-width:0}
+.kart-bas{display:flex;flex-direction:column;gap:var(--space-3);padding:22px var(--space-5) 20px;border-bottom:1px solid var(--line)}
+.kart-bolum{padding:var(--space-4) var(--space-5);border-bottom:1px solid var(--line-2)}
+.kart-bolum:last-child{border-bottom:0}
+.kart h1,.kart h2.baslik{margin:0;font-family:var(--font-display);font-weight:700;font-size:26px;line-height:1.2}
+.etiket{margin:0 0 6px;font-size:13px;font-weight:600;color:var(--ink-2)}
+.panel-baslik{margin:0;font-family:var(--font-display);font-weight:700;font-size:19px;line-height:1.3}
+
+/* Rozet ve çip */
+.rozetler,.cipler{display:flex;gap:var(--space-2);flex-wrap:wrap}
+.rozet{font-size:12.5px;font-weight:600;border-radius:var(--radius-pill);padding:2px 11px;background:var(--tint);color:var(--code-ink)}
+.rozet.kotu{background:var(--bad-bg);color:var(--bad)}
+.rozet.iyi{background:var(--ok-bg);color:var(--ok)}
+.cip{min-height:36px;padding:0 14px;border-radius:var(--radius-pill);border:1px solid var(--line-3);background:var(--box);color:var(--ink);font-size:13.5px;cursor:pointer}
+.cip[aria-pressed="true"]{background:var(--fill);border-color:var(--fill);color:var(--on-fill);font-weight:600}
+
+/* Rakam kutusu */
+.rakamlar{display:flex;gap:var(--space-3);flex-wrap:wrap}
+.rakam{min-width:110px;padding:10px 16px;border:1px solid var(--line-3);border-radius:var(--radius-sm);background:var(--box)}
+.rakam.ana{border:1.5px solid var(--ink)}
+.rakam small{display:block;font-size:12.5px;color:var(--ink-2)}
+.rakam b{font-family:var(--font-mono);font-weight:500;font-size:22px;font-variant-numeric:tabular-nums}
+.eksi{color:var(--bad);font-weight:600}
+.arti{color:var(--ok);font-weight:600}
+
+/* Düğme */
+.eylem{display:flex;gap:var(--space-3);flex-wrap:wrap;align-items:center}
+.dugme{min-height:var(--control-h);padding:0 20px;border-radius:var(--radius-sm);border:1px solid var(--line-3);background:var(--box);color:var(--ink);font-weight:500;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.dugme.birincil{border-color:var(--fill);background:var(--fill);color:var(--on-fill);font-weight:600}
+.dugme:disabled{color:var(--ink-2);background:var(--card);cursor:default}
+
+/* Metin alanı */
+.alan{width:100%;min-height:var(--control-h);padding:10px 14px;border:1px solid var(--line-3);border-radius:var(--radius-sm);background:var(--box);color:var(--ink);font-size:16px;line-height:1.6}
+textarea.alan{min-height:140px;resize:vertical}
+.cikti{font-family:var(--font-mono);font-size:13.5px;line-height:1.75;background:var(--code-bg);border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px 16px;white-space:pre-wrap;margin:0}
+
+/* Tablo */
+.tablo-kap{overflow-x:auto;border:1px solid var(--line-3);border-radius:var(--radius-sm)}
+table.tablo{width:100%;border-collapse:collapse;font-size:14px}
+.tablo th{background:var(--tint);color:var(--ink-2);font-size:12.5px;font-weight:600;text-align:left;padding:8px 12px}
+.tablo td{padding:8px 12px;border-top:1px solid var(--line-2);background:var(--box)}
+.tablo .sayi{text-align:right;font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+
+/* Liste (sol panel) */
+.liste{list-style:none;margin:0;padding:0}
+.liste li{border-bottom:1px solid var(--line-2)}
+.liste li:last-child{border-bottom:0}
+.liste a,.liste button{display:flex;justify-content:space-between;gap:var(--space-3);width:100%;padding:10px var(--space-4);background:none;border:0;text-align:left;color:var(--ink);text-decoration:none;cursor:pointer}
+.liste [aria-current="true"]{background:var(--selected);box-shadow:inset 4px 0 0 var(--accent);font-weight:600}
+.liste code{font-family:var(--font-mono);font-size:13px;color:var(--code-ink)}
+
+@media (max-width:640px){.band,.govde{padding-left:16px;padding-right:16px}.band-alt{display:none}}
