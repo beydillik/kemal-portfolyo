@@ -10,7 +10,7 @@
       projeleri_gor: "Projeleri gör", ozgecmisi_gor: "Özgeçmiş",
       one_cikan: "Öne çıkan projeler", tum_projeler: "Tüm projeler",
       kisa_ozgecmis: "Kısa özgeçmiş", deneyim: "Deneyim", egitim: "Eğitim", iletisim: "İletişim",
-      eposta: "E-posta", tamami: "Özgeçmişin tamamı",
+      web: "Web sitesi", eposta: "E-posta", tamami: "Özgeçmişin tamamı",
       projeler_baslik: "Projeler",
       projeler_giris: "Finans ve controlling işlerim için kurduğum araçlar, yayındaki ürünler ve kendi kullanımım için yazdığım küçük uygulamalar.",
       filtre: "Gruba göre süz", tumu: "Tümü",
@@ -28,11 +28,11 @@
       gorunum_acik: "Açık", gorunum_koyu: "Koyu", dil_grup: "Dil"
     },
     en: {
-      nav_ana: "Home", nav_projeler: "Projects", nav_ozgecmis: "Résumé",
-      projeleri_gor: "See projects", ozgecmisi_gor: "Résumé",
+      nav_ana: "Home", nav_projeler: "Projects", nav_ozgecmis: "Resume",
+      projeleri_gor: "See projects", ozgecmisi_gor: "Resume",
       one_cikan: "Featured projects", tum_projeler: "All projects",
-      kisa_ozgecmis: "Résumé at a glance", deneyim: "Experience", egitim: "Education", iletisim: "Contact",
-      eposta: "Email", tamami: "Full résumé",
+      kisa_ozgecmis: "Resume at a glance", deneyim: "Experience", egitim: "Education", iletisim: "Contact",
+      web: "Website", eposta: "Email", tamami: "Full resume",
       projeler_baslik: "Projects",
       projeler_giris: "Tools I built for finance and controlling work, products that are live, and small apps I wrote for my own use.",
       filtre: "Filter by group", tumu: "All",
@@ -70,8 +70,7 @@
     var k = null;
     try { k = localStorage.getItem(K_DIL); } catch (e) {}
     if (k === "tr" || k === "en") return k;
-    var n = (navigator.languages && navigator.languages[0]) || navigator.language || "tr";
-    return /^tr\b/i.test(n) ? "tr" : "en";
+    return "en"; /* Varsayılan İngilizce; kayıtlı seçim varsa o kullanılır. */
   }
   function t(k) { return METIN[dil][k] || k; }
   function sec(o) { return o == null ? "" : (typeof o === "string" ? o : (o[dil] || o.tr || "")); }
@@ -226,13 +225,14 @@
     iletisimCiz($("iletisim"));
   }
 
-  function iletisimCiz(kap) {
+  function iletisimCiz(kap, siteDahil) {
     var il = veri.ozgecmis.kisi.iletisim;
     bosalt(kap);
     var satirlar = [];
     if (il.eposta) satirlar.push([t("eposta"), "mailto:" + il.eposta, il.eposta]);
     if (il.linkedin) satirlar.push(["LinkedIn", il.linkedin, il.linkedin.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")]);
     if (il.github) satirlar.push(["GitHub", il.github, il.github.replace(/^https?:\/\//, "")]);
+    if (siteDahil && il.site) satirlar.push([t("web"), il.site, il.site.replace(/^https?:\/\//, "").replace(/\/$/, "")]);
     ekle(kap, h("ul", { class: "iletisim" }, satirlar.map(function (s) {
       var u = guvenliUrl(s[1]);
       return h("li", null, h("span", { class: "etiket", text: s[0] }),
@@ -321,7 +321,7 @@
     var eylem = h("div", { class: "eylem" },
       veri.pdfVar ? h("a", { class: "dugme birincil", href: o.pdf, download: "", text: t("pdf_indir") }) : null, yazdir);
     var iletisim = h("div");
-    iletisimCiz(iletisim);
+    iletisimCiz(iletisim, true);
 
     ekle(kap, h("section", { class: "kart" },
       h("div", { class: "kart-bas" },

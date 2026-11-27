@@ -10,6 +10,8 @@
 <link rel="stylesheet" href="bant-tema.css">
 <link rel="stylesheet" href="bant-temel.css">
 <script src="bant-tema.js"></script>
+<script>/* Varsayılan açık görünüm: kullanıcı Açık/Koyu seçmediyse sistemin koyu ayarı uygulanmaz (bant-tema.js değiştirilmeden). */
+(function(){function acik(){try{if(localStorage.getItem("bant-gorunum"))return}catch(e){}if(window.Bant&&Bant.tema)Bant.tema.uygula(null,"acik")}acik();document.addEventListener("DOMContentLoaded",acik)})();</script>
 <script src="js/site.js" defer></script>
 <style>
 /* Ortak: genişlik, tarih, teknoloji etiketi. Renk yalnızca var(--…) ile. */
