@@ -37,7 +37,7 @@
         "tr": [
           "Almanya'daki Şasi Bölümü Controller'ına ve Türkiye Ülke Müdürü'ne bağlı çalışıyorum; Manisa Fabrika Yönetim Ekibi üyesiyim.",
           "Pozisyonun boş kaldığı dönemde yaklaşık 6–7 ay Mali İşler Müdürlüğünü vekâleten yürüttüm.",
-          "Plant Controller görevinin yanında SAP Plant Coordinator ve CO Key User rollerini de üstleniyorum; SAP P10 ve SAP S/4HANA geçişlerinde bu rollerle görev aldım.",
+          "Plant Controller görevinin yanında SAP Plant Coordinator ve CO Key User rollerini de üstleniyorum; SAP P10 (grup ERP sistemi) ve SAP S/4HANA geçişlerinde bu rollerle görev aldım.",
           "Grup politikalarına uygun yıllık bütçe ve tahminleri hazırlıyor; ay sonu kapanışını ve yönetim raporlamasını yürütüyorum.",
           "SAP ve SAP BW ile kontrol faaliyetleri, KPI raporlaması ve üç aylık grup konsolidasyon raporları (SAP BCS; bilanço ve kâr-zarar).",
           "Kârlılık, maliyet ve stok analizleri; verimlilik raporlarının kurulması ve geliştirilmesi.",
@@ -46,7 +46,7 @@
         "en": [
           "Report to the Chassis Division Controller at headquarters in Germany and to the Country Manager for Türkiye; member of the Manisa Plant Management Team.",
           "Acting Finance Manager for about six to seven months while the position was vacant.",
-          "Also SAP Plant Coordinator and CO Key User; served in these roles in the SAP P10 and SAP S/4HANA migrations.",
+          "Also SAP Plant Coordinator and CO Key User; served in these roles in the SAP P10 (group ERP system) and SAP S/4HANA migrations.",
           "Prepare annual budgets and forecasts in line with group policies; run month-end close and management reporting.",
           "Control activities in SAP and SAP BW; KPI reporting; quarterly group consolidation reporting in SAP BCS (balance sheet and P&L).",
           "Profitability, cost and inventory analysis; build and improve productivity reports.",
@@ -141,17 +141,16 @@
       "tr": ["Finansal raporlama", "Sapma analizi", "Bütçe ve tahmin", "Ürün maliyetlendirme", "Kârlılık analizi", "Ay sonu kapanış", "TFRS / UFRS / VUK"],
       "en": ["Financial reporting", "Variance analysis", "Budgeting & forecasting", "Product costing", "Profitability analysis", "Month-end close", "IFRS / TFRS / VUK"] } },
     { "grup": { "tr": "ERP & BI", "en": "ERP & BI" }, "ogeler": ["SAP CO", "SAP FI", "SAP BW", "S/4HANA key user", "Power BI (Power Query, Power Pivot)", "Excel dashboards"] },
-    { "grup": { "tr": "Yazılım", "en": "Software" }, "ogeler": ["Python", "SQL", "Excel VBA", "HTML / CSS / JavaScript", "Git & GitHub", "Firebase"] },
+    { "grup": { "tr": "Yazılım", "en": "Software" }, "ogeler": ["Python", "SQL", "Excel VBA", "HTML / CSS / JavaScript", "Git & GitHub"] },
     { "grup": { "tr": "Yapay zekâ ile geliştirme", "en": "AI-assisted development" }, "ogeler": ["Claude Code", "AI skills & agent workflows", "Prompt design", "Static web apps (Netlify, GitHub Pages)"] }
   ],
   "diller": [
     { "dil": { "tr": "Türkçe", "en": "Turkish" }, "seviye": { "tr": "Anadil", "en": "Native" } },
-    { "dil": { "tr": "İngilizce", "en": "English" }, "seviye": null }
+    { "dil": { "tr": "İngilizce", "en": "English" }, "seviye": { "tr": "B2 · iş yazışmalarında güçlü", "en": "B2 · strong written and business English" } }
   ],
   "ilgi_alanlari": { "tr": ["Basketbol", "Teknoloji", "Yüzme ve yürüyüş", "Müzik"], "en": ["Basketball", "Technology", "Swimming & walking", "Music"] },
   "pdf": "assets/Kemal_Beydilli_CV.pdf",
   "acik_noktalar": [
-    "İngilizce seviyesi (ör. B2) yazılacak.",
     "PDF özgeçmiş bu dosyayla eşitlenecek: yazım düzeltmeleri, raporlama hattı (Country Manager), YBS ve projeler bölümü."
   ]
 }
