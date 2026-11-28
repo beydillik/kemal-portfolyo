@@ -30,7 +30,8 @@
   },
   "deneyim": [
     {
-      "baslangic": "2016-12", "bitis": null,
+      "baslangic": "2016-12",
+      "bitis": null,
       "sirket": "Mubea",
       "unvan": { "tr": "Plant Controller", "en": "Plant Controller" },
       "maddeler": {
@@ -55,7 +56,8 @@
       }
     },
     {
-      "baslangic": "2015-03", "bitis": "2016-12",
+      "baslangic": "2015-03",
+      "bitis": "2016-12",
       "sirket": "ZF Lemförder",
       "unvan": { "tr": "Financial Controller", "en": "Financial Controller" },
       "maddeler": {
@@ -74,7 +76,8 @@
       }
     },
     {
-      "baslangic": "2011-09", "bitis": "2015-03",
+      "baslangic": "2011-09",
+      "bitis": "2015-03",
       "sirket": "Çimentaş (Cementir)",
       "unvan": { "tr": "Planlama, Bütçe ve Kontrol Uzmanı", "en": "Planning, Budget & Control Specialist" },
       "maddeler": {
@@ -91,7 +94,8 @@
       }
     },
     {
-      "baslangic": "2009-11", "bitis": "2011-08",
+      "baslangic": "2009-11",
+      "bitis": "2011-08",
       "sirket": "Tesco Kipa",
       "unvan": { "tr": "Finansal Analist", "en": "Financial Analyst" },
       "maddeler": {
@@ -108,7 +112,8 @@
       }
     },
     {
-      "baslangic": "2007-08", "bitis": "2009-11",
+      "baslangic": "2007-08",
+      "bitis": "2009-11",
       "sirket": "Tesco Kipa",
       "unvan": { "tr": "Lojistik Planlama Uzmanı", "en": "Logistics Planning Specialist" },
       "maddeler": {
@@ -117,7 +122,8 @@
       }
     },
     {
-      "baslangic": "2004-09", "bitis": "2007-07",
+      "baslangic": "2004-09",
+      "bitis": "2007-07",
       "sirket": null,
       "kisa": true,
       "unvan": { "tr": "Kariyer başlangıcı", "en": "Early career" },
@@ -128,29 +134,76 @@
     }
   ],
   "egitim": [
-    { "okul": "Ankara Üniversitesi (Açıköğretim)", "bolum": { "tr": "Yönetim Bilişim Sistemleri, Lisans", "en": "Management Information Systems, BSc" }, "baslangic": "2023", "bitis": null, "not_ortalamasi": null },
-    { "okul": "Manisa Celal Bayar Üniversitesi", "bolum": { "tr": "Yazılım Mühendisliği, Lisans", "en": "Software Engineering, BSc" }, "baslangic": "2021", "bitis": "2025", "not_ortalamasi": "3,54 / 4" },
-    { "okul": "Yaşar Üniversitesi", "bolum": { "tr": "İşletme Mühendisliği, Yüksek Lisans", "en": "Business Engineering, MSc" }, "baslangic": "2013", "bitis": "2015", "not_ortalamasi": "3,88 / 4" },
-    { "okul": "Ege Üniversitesi", "bolum": { "tr": "İşletme, Lisans", "en": "Business Administration, BA" }, "baslangic": "1999", "bitis": "2004", "not_ortalamasi": "81 / 100" }
+    {
+      "okul": "Ankara Üniversitesi (Açıköğretim)",
+      "bolum": { "tr": "Yönetim Bilişim Sistemleri, Lisans", "en": "Management Information Systems, BSc" },
+      "baslangic": "2023",
+      "bitis": null,
+      "not_ortalamasi": null
+    },
+    {
+      "okul": "Manisa Celal Bayar Üniversitesi",
+      "bolum": { "tr": "Yazılım Mühendisliği, Lisans", "en": "Software Engineering, BSc" },
+      "baslangic": "2021",
+      "bitis": "2025",
+      "not_ortalamasi": "3,54 / 4"
+    },
+    {
+      "okul": "Yaşar Üniversitesi",
+      "bolum": { "tr": "İşletme Mühendisliği, Yüksek Lisans", "en": "Business Engineering, MSc" },
+      "baslangic": "2013",
+      "bitis": "2015",
+      "not_ortalamasi": "3,88 / 4"
+    },
+    {
+      "okul": "Ege Üniversitesi",
+      "bolum": { "tr": "İşletme, Lisans", "en": "Business Administration, BA" },
+      "baslangic": "1999",
+      "bitis": "2004",
+      "not_ortalamasi": "81 / 100"
+    }
   ],
   "sertifikalar": [
-    { "ad": { "tr": "Serbest Muhasebeci Mali Müşavir (SMMM) — TÜRMOB", "en": "Certified Public Accountant (SMMM) — TÜRMOB" }, "yil": "2016", "detay": { "tr": "Yeterlilik sınavı 81/100 (Kasım 2015)", "en": "Proficiency exam 81/100 (Nov 2015)" } }
+    {
+      "ad": { "tr": "Serbest Muhasebeci Mali Müşavir (SMMM) — TÜRMOB", "en": "Certified Public Accountant (SMMM) — TÜRMOB" },
+      "yil": "2016",
+      "detay": { "tr": "Yeterlilik sınavı 81/100 (Kasım 2015)", "en": "Proficiency exam 81/100 (Nov 2015)" }
+    }
   ],
   "yetkinlikler": [
-    { "grup": { "tr": "Finans & Controlling", "en": "Finance & Controlling" }, "ogeler": {
-      "tr": ["Finansal raporlama", "Sapma analizi", "Bütçe ve tahmin", "Ürün maliyetlendirme", "Kârlılık analizi", "Ay sonu kapanış", "TFRS / UFRS / VUK"],
-      "en": ["Financial reporting", "Variance analysis", "Budgeting & forecasting", "Product costing", "Profitability analysis", "Month-end close", "IFRS / TFRS / VUK"] } },
-    { "grup": { "tr": "ERP & BI", "en": "ERP & BI" }, "ogeler": ["SAP CO", "SAP FI", "SAP BW", "S/4HANA key user", "Power BI (Power Query, Power Pivot)", "Excel dashboards"] },
+    {
+      "grup": { "tr": "Finans & Controlling", "en": "Finance & Controlling" },
+      "ogeler": {
+        "tr": ["Finansal raporlama", "Sapma analizi", "Bütçe ve tahmin", "Ürün maliyetlendirme", "Kârlılık analizi", "Ay sonu kapanış", "TFRS / UFRS / VUK"],
+        "en": [
+          "Financial reporting",
+          "Variance analysis",
+          "Budgeting & forecasting",
+          "Product costing",
+          "Profitability analysis",
+          "Month-end close",
+          "IFRS / TFRS / VUK"
+        ]
+      }
+    },
+    {
+      "grup": { "tr": "ERP & BI", "en": "ERP & BI" },
+      "ogeler": ["SAP CO", "SAP FI", "SAP BW", "S/4HANA key user", "Power BI (Power Query, Power Pivot)", "Excel dashboards"]
+    },
     { "grup": { "tr": "Yazılım", "en": "Software" }, "ogeler": ["Python", "SQL", "Excel VBA", "HTML / CSS / JavaScript", "Git & GitHub"] },
-    { "grup": { "tr": "Yapay zekâ ile geliştirme", "en": "AI-assisted development" }, "ogeler": ["Claude Code", "AI skills & agent workflows", "Prompt design", "Static web apps (Netlify, GitHub Pages)"] }
+    {
+      "grup": { "tr": "Yapay zekâ ile geliştirme", "en": "AI-assisted development" },
+      "ogeler": ["Claude Code", "AI skills & agent workflows", "Prompt design", "Static web apps (Netlify, GitHub Pages)"]
+    }
   ],
   "diller": [
     { "dil": { "tr": "Türkçe", "en": "Turkish" }, "seviye": { "tr": "Anadil", "en": "Native" } },
-    { "dil": { "tr": "İngilizce", "en": "English" }, "seviye": { "tr": "B2 · iş yazışmalarında güçlü", "en": "B2 · strong written and business English" } }
+    {
+      "dil": { "tr": "İngilizce", "en": "English" },
+      "seviye": { "tr": "B2 · iş yazışmalarında güçlü", "en": "B2 · strong written and business English" }
+    }
   ],
   "ilgi_alanlari": { "tr": ["Basketbol", "Teknoloji", "Yüzme ve yürüyüş", "Müzik"], "en": ["Basketball", "Technology", "Swimming & walking", "Music"] },
   "pdf": "assets/Kemal_Beydilli_CV.pdf",
-  "acik_noktalar": [
-    "PDF özgeçmiş bu dosyayla eşitlenecek: yazım düzeltmeleri, raporlama hattı (Country Manager), YBS ve projeler bölümü."
-  ]
+  "acik_noktalar": ["PDF özgeçmiş bu dosyayla eşitlenecek: yazım düzeltmeleri, raporlama hattı (Country Manager), YBS ve projeler bölümü."]
 }
