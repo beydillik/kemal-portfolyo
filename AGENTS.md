@@ -85,7 +85,7 @@ Kod değişikliği gerekmez; sayfalar yeni kaydı kendiliğinden gösterir. Kod 
 
 ### 5.1 Özgeçmiş metnini Kemal'in kendisi düzeltmesi
 
-- `ozgecmis.html?duzenle=1` düzenleme modunu açar (sitede bağlantısı yok). Metinler yerinde düzeltilir; TR ve EN ayrı. Taslak yalnızca o tarayıcıda (localStorage `portfolyo-ozgecmis-taslak`) durur, yayındaki sayfayı değiştirmez.
+- `ozgecmis.html?duzenle=1` düzenleme modunu açar; giriş, özgeçmiş kartının altındaki küçük "⋯" menüsünden ("Metni düzenle"). Şifre yok: sayfa yayındaki metni değiştiremez, koruma GitHub oturumudur. Metinler yerinde düzeltilir; TR ve EN ayrı. Taslak yalnızca o tarayıcıda (localStorage `portfolyo-ozgecmis-taslak`) durur, yayındaki sayfayı değiştirmez.
 - Yayınlama: "JSON'u kopyala" → "GitHub'da aç" (`data/ozgecmis.json` düzenleme sayfası) → tümünü seç, yapıştır → Commit. Sayfa token/anahtar tutmaz; kaydetme Kemal'in GitHub oturumuyla olur.
 - Bu yolda `kontrol_veri.py` çalışmaz; bir sonraki işte denetim çalıştırılır. Tarih, iletişim, fotoğraf ve projeler bu moddan düzenlenmez.
 - Yazdırma iki türlü: "Yazdır" ekrandaki iki sütunlu tasarım; "Yazdır (ATS, düz metin)" tek sütun + sistem yazı tipi (başvuru sistemlerine yüklenecek PDF için).
