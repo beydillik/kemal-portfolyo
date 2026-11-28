@@ -4,7 +4,7 @@
   "kisi": {
     "ad": "Kemal Beydilli",
     "konum": { "tr": "Manisa, Türkiye", "en": "Manisa, Türkiye" },
-    "unvan": { "tr": "Plant Controller · SMMM · Yazılım Mühendisliği (Lisans)", "en": "Plant Controller · Turkish CPA (SMMM) · BSc Software Engineering" },
+    "unvan": { "tr": "Plant Controller · SMMM · Finansal Analiz ve Raporlama", "en": "Plant Controller · Turkish CPA (SMMM) · Financial Analysis & Reporting" },
     "slogan": {
       "tr": "Rakamları okuyan, araçlarını yazılım ve yapay zekâyla kendi kuran bir controller.",
       "en": "A controller who reads the numbers and builds his own tools with software and AI."
@@ -19,14 +19,14 @@
     "not": "Telefon numarası sitede yayımlanmaz; yalnızca PDF özgeçmişte yer alır."
   },
   "one_cikanlar": [
-    { "deger": "15+", "tr": "yıl finansal raporlama", "en": "years in financial reporting" },
+    { "deger": "15+", "tr": "yıl finansal analiz ve raporlama", "en": "years in financial analysis & reporting" },
     { "deger": "10+", "tr": "yıl otomotiv sektörü", "en": "years in automotive" },
     { "deger": "SMMM", "tr": "2016'dan beri", "en": "Turkish CPA since 2016" },
     { "deger": "BSc", "tr": "Yazılım Mühendisliği, 2025", "en": "Software Engineering, 2025" }
   ],
   "hakkimda": {
-    "tr": "Otomotiv sektöründe 10 yılı aşkın süredir Plant Controller olarak çalışıyorum; finansal raporlamada 15 yılı aşkın deneyimim var. SAP FI/CO, üretim maliyetleri, bütçe ve ay sonu kapanışı temel sorumluluklarım. 2016'dan beri SMMM ruhsatına sahibim ve 2025'te Yazılım Mühendisliği lisans eğitimimi tamamladım. Finans bilgimi yazılım ve yapay zekâ araçlarıyla birleştiriyorum: ekiplerin her gün kullandığı raporlama araçlarını, rehberleri ve küçük uygulamaları Claude Code gibi yeni nesil araçlarla kendim geliştiriyor, elle yapılan işleri kontrollü ve tekrarlanabilir çalışma biçimlerine dönüştürüyorum.",
-    "en": "Plant Controller with more than ten years in the automotive industry and more than fifteen years in financial reporting. SAP FI/CO, production costing, budgeting and month-end close are my core responsibilities. Certified public accountant in Türkiye (SMMM) since 2016, with a BSc in Software Engineering (2025). I combine finance with software and AI: I build the reporting tools, guides and small apps my teams use every day with modern AI tools such as Claude Code, and turn manual work into controlled, repeatable ways of working."
+    "tr": "Otomotiv sektöründe 10 yılı aşkın süredir Plant Controller olarak çalışıyorum; finansal analiz ve raporlamada 15 yılı aşkın deneyimim var. SAP FI/CO, üretim maliyetleri, bütçe ve ay sonu kapanışı temel sorumluluklarım. 2016'dan beri SMMM ruhsatına sahibim; İşletme Mühendisliği yüksek lisansımın ardından 2025'te Yazılım Mühendisliği lisans eğitimimi tamamladım. Finans bilgimi yazılım ve yapay zekâ araçlarıyla birleştiriyorum: ekiplerin her gün kullandığı raporlama araçlarını, rehberleri ve küçük uygulamaları Claude Code gibi yeni nesil araçlarla kendim geliştiriyor, elle yapılan işleri kontrollü ve tekrarlanabilir çalışma biçimlerine dönüştürüyorum.",
+    "en": "Plant Controller with more than ten years in the automotive industry and more than fifteen years in financial analysis and reporting. SAP FI/CO, production costing, budgeting and month-end close are my core responsibilities. Certified public accountant in Türkiye (SMMM) since 2016, with an MSc in Business Engineering and a BSc in Software Engineering (2025). I combine finance with software and AI: I build the reporting tools, guides and small apps my teams use every day with modern AI tools such as Claude Code, and turn manual work into controlled, repeatable ways of working."
   },
   "deneyim": [
     {
@@ -174,11 +174,13 @@
     {
       "grup": { "tr": "Finans & Controlling", "en": "Finance & Controlling" },
       "ogeler": {
-        "tr": ["Finansal raporlama", "Sapma analizi", "Bütçe ve tahmin", "Ürün maliyetlendirme", "Kârlılık analizi", "Ay sonu kapanış", "TFRS / UFRS / VUK"],
+        "tr": ["Finansal analiz", "Finansal raporlama", "Sapma analizi", "Bütçe ve tahmin", "Maliyet muhasebesi", "Ürün maliyetlendirme", "Kârlılık analizi", "Ay sonu kapanış", "TFRS / UFRS / VUK"],
         "en": [
+          "Financial analysis",
           "Financial reporting",
           "Variance analysis",
           "Budgeting & forecasting",
+          "Cost accounting",
           "Product costing",
           "Profitability analysis",
           "Month-end close",

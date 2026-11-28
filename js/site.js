@@ -471,10 +471,7 @@
         duz(h("p", { class: "cv-unvan", text: sec(k.unvan) }), alan(k, "unvan")),
         duz(h("p", { class: "cv-slogan", text: sec(k.slogan) }), alan(k, "slogan")),
         duz(h("p", { class: "cv-konum", text: sec(k.konum) }), alan(k, "konum")),
-        iletisim,
-        h("div", { class: "eylem" },
-          veri.pdfVar ? h("a", { class: "dugme birincil", href: o.pdf, download: "", text: t("pdf_indir") }) : null, yazdir, yazdirAts),
-        veri.pdfVar ? null : h("p", { class: "not pdf-not", text: t("pdf_yok") })),
+        iletisim),
       k.foto ? h("img", { class: "cv-foto", src: k.foto, alt: k.ad, width: "480", height: "480" }) : null);
 
     var rakamlar = (o.one_cikanlar || []).length ? h("div", { class: "cv-rakamlar" }, o.one_cikanlar.map(function (r) {
@@ -521,6 +518,9 @@
       o.ilgi_alanlari ? bolum(t("ilgi"), duz(h("p", { class: "metin", text: (o.ilgi_alanlari[dil] || o.ilgi_alanlari.tr).join(" · ") }), listeAlani(o, "ilgi_alanlari", " · "))) : null);
 
     /* CV kâğıdı site görünümünden bağımsız: her zaman sitenin paletinin açık tokenları (palet adı <html>'den okunur). */
+    /* Yazdırma düğmeleri kartın üstünde ince bir satırda; başlık alanını büyütmez. */
+    ekle(kap, h("div", { class: "eylem cv-arac" },
+      veri.pdfVar ? h("a", { class: "dugme birincil", href: o.pdf, download: "", text: t("pdf_indir") }) : null, yazdir, yazdirAts));
     ekle(kap, h("article", { class: "kart cv", "data-palet": kok.getAttribute("data-palet"), "data-theme": "acik" },
       ust, rakamlar, h("div", { class: "cv-govde" }, ana, yan), alt));
     if (duzenle) duzenAraci(veri.taslakVar);
