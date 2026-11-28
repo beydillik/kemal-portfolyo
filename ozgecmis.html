@@ -26,19 +26,17 @@
    başlık bandı ve rakam şeridi bant tokenlarıyla (açık/koyuda aynı) dolgulu. Renk yalnızca var(--…). */
 #ozgecmis{max-width:1040px;width:100%;margin:0 auto}
 .cv{overflow:hidden;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.cv-ust{display:grid;grid-template-columns:1fr auto;gap:var(--space-6);align-items:center;padding:32px var(--space-6) 28px;background:var(--band);color:var(--band-ink);border-bottom:4px solid var(--accent)}
+.cv-ust{display:grid;grid-template-columns:1fr auto;gap:var(--space-6);align-items:center;padding:24px var(--space-6) 22px;background:var(--band);color:var(--band-ink);border-bottom:4px solid var(--accent)}
 .cv-kimlik{display:flex;flex-direction:column;gap:var(--space-2);min-width:0}
-.cv-kimlik h1{margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,46px);line-height:1.04;letter-spacing:-.8px;color:var(--band-ink)}
+.cv-kimlik h1{margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(28px,4.4vw,40px);line-height:1.04;letter-spacing:-.8px;color:var(--band-ink)}
 .cv-unvan{margin:0;font-size:17px;font-weight:600;color:var(--band-ink)}
-.cv-slogan{margin:0;color:var(--band-ink-2);font-size:15.5px;max-width:52ch}
+.cv-slogan{margin:0;color:var(--band-ink-2);font-size:15px}
 .cv-konum{margin:0;font-size:13.5px;color:var(--band-ink-2)}
-.cv-ust .eylem{margin-top:var(--space-3)}
-.cv-ust .dugme{background:transparent;border-color:var(--band-line);color:var(--band-ink)}
-.cv-ust .dugme.birincil{background:var(--band-on);border-color:var(--band-on);color:var(--band)}
+.cv-arac{justify-content:flex-end;gap:var(--space-2);margin:0 0 var(--space-3)}
+.cv-arac .dugme{min-height:38px;padding:0 14px;font-size:14px}
 .cv-ust :focus-visible{outline-color:var(--band-ink)}
-.cv-ust .pdf-not{color:var(--band-ink-2)}
-.cv-foto{width:176px;height:176px;object-fit:cover;border-radius:50%;border:4px solid var(--band-2);box-shadow:0 0 0 2px var(--accent);display:block}
-.cv-iletisim .iletisim{list-style:none;margin:var(--space-3) 0 0;padding:0;display:flex;flex-wrap:wrap;gap:var(--space-2) var(--space-5)}
+.cv-foto{width:144px;height:144px;object-fit:cover;border-radius:50%;border:4px solid var(--band-2);box-shadow:0 0 0 2px var(--accent);display:block}
+.cv-iletisim .iletisim{list-style:none;margin:var(--space-2) 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px var(--space-5)}
 .cv-iletisim li{display:flex;gap:var(--space-2);align-items:baseline;overflow-wrap:anywhere;min-width:0;font-size:14px}
 .cv-iletisim .etiket{margin:0;font-size:12px;color:var(--band-ink-2)}
 .cv-iletisim a{color:var(--band-ink);text-decoration-color:var(--band-line);text-underline-offset:3px}
