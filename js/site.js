@@ -363,7 +363,7 @@
     /* Yan sütun: yetkinlik, eğitim, sertifika, dil, ilgi */
     var yan = h("aside", { class: "cv-yan" },
       bolum(t("yetkinlikler"), o.yetkinlikler.map(function (y) {
-        return h("div", { class: "yetkinlik" }, h("p", { class: "etiket", text: sec(y.grup) }), teknolojiler(y.ogeler));
+        return h("div", { class: "yetkinlik" }, h("p", { class: "etiket", text: sec(y.grup) }), teknolojiler(Array.isArray(y.ogeler) ? y.ogeler : (y.ogeler[dil] || y.ogeler.tr)));
       })),
       bolum(t("egitim"), h("ul", { class: "yan-liste" }, o.egitim.map(function (e) {
         return h("li", null, h("b", { text: sec(e.bolum) }), h("span", { text: e.okul }),

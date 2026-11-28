@@ -102,24 +102,36 @@
 }
 @media print{
   @page{size:A4;margin:10mm}
+  /* ATS/metin çıkarımı için: sistem yazı tipleri (gömülü TrueType) ve tek sütun; okuma sırası = DOM sırası. */
+  :root{--font-display:Arial,"Liberation Sans",Helvetica,sans-serif;--font-sans:Arial,"Liberation Sans",Helvetica,sans-serif;--font-mono:Arial,"Liberation Sans",Helvetica,sans-serif}
+  .cv-govde{display:block}
+  .cv-yan{border-left:0 !important;border-top:1px solid var(--line);padding:16px 20px !important}
+  .cv-yan .teknoloji li{font-size:11px;padding:1px 8px}
+  .cv-rakamlar{grid-template-columns:repeat(4,auto) !important;justify-content:space-between;padding:0 20px}
+  .cv-rakam{flex-direction:row;align-items:baseline;gap:6px;padding:7px 0 !important;border:0 !important}
+  .cv-rakam b{font-size:16px}
+  .cv-rakam span{font-size:11px}
+  .metin{max-width:none}
   .band,.bar,.alt-bant,.eylem,.pdf-not,.cv-tum{display:none}
-  body{background:var(--card);font-size:12px}
+  body{background:var(--card);font-size:11.5px}
   .govde{padding:0;max-width:none}
   .kart{box-shadow:none;border:0;border-radius:0}
-  .cv-ust{padding:18px 22px}
-  .cv-foto{width:120px;height:120px}
+  .cv-ust{padding:14px 20px}
+  .cv-foto{width:104px;height:104px}
   .cv-ana,.cv-yan{padding:16px 20px}
   .cv-rakamlar{grid-template-columns:repeat(4,1fr)}
   .cv-rakam{padding:10px 20px}
   .cv-rakam:nth-child(n+3){border-top:0}
   .cv-rakam:nth-child(3){border-left:1px solid var(--band-line)}
   .is,.cv-projeler li,.yetkinlik,.yan-liste li,.cv-ust,.cv-rakamlar{break-inside:avoid}
-  .cv-govde{grid-template-columns:1.6fr 1fr}
   /* İç grid'ler yazdırmada blok: Chromium grid parçalanmasında öğeler üst üste binebiliyor. */
   .cv-ana,.cv-yan,.yan-liste{display:block}
   .cv-ana>.cv-bolum+.cv-bolum{margin-top:16px}
   .cv-yan>.cv-bolum+.cv-bolum{margin-top:14px}
-  .yan-liste li{margin-bottom:8px}
+  .yan-liste li{display:block;margin-bottom:4px}
+  .yan-liste li>*{display:inline}
+  .yan-liste li>*+*{margin-left:10px}
+  .yetkinlik{margin-bottom:8px}
   .cv-baslik{margin-bottom:8px}
   .cv-yan .teknoloji{gap:4px}
   .cv-yan .teknoloji li{font-size:10.5px;padding:1px 7px}
