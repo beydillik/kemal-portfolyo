@@ -23,7 +23,7 @@
       hakkimda: "Profil", secili_projeler: "Seçili projeler", sertifikalar: "Sertifikalar", yetkinlikler: "Yetkinlikler",
       diller: "Diller", ilgi: "İlgi alanları", not_ort: "Not ortalaması",
       pdf_indir: "PDF indir", yazdir: "Yazdır", yazdir_ats: "Yazdır (ATS, düz metin)",
-      duz_baslik: "Düzenleme modu", duz_bilgi: "Metinlerin üzerine tıklayıp düzeltin. TR ve EN ayrı düzenlenir; dili üstten değiştirin. Madde içinde Enter yeni madde ekler, boş maddede Geri Sil maddeyi siler.",
+      duz_baslik: "Düzenleme modu", duz_menu: "Diğer seçenekler", duz_ac: "Metni düzenle", duz_cik: "Düzenlemeden çık", duz_bilgi: "Metinlerin üzerine tıklayıp düzeltin. TR ve EN ayrı düzenlenir; dili üstten değiştirin. Madde içinde Enter yeni madde ekler, boş maddede Geri Sil maddeyi siler.",
       duz_taslak: "Taslak bu tarayıcıda saklandı", duz_yayinda: "Yayındaki metin gösteriliyor", duz_kopyala: "JSON'u kopyala", duz_kopyalandi: "Kopyalandı",
       duz_indir: "JSON indir", duz_github: "GitHub'da aç", duz_sil: "Taslağı sil", duz_sil_onay: "Taslak silinsin ve yayındaki metne dönülsün mü?",
       duz_adim: "Yayınlamak için: JSON'u kopyala → GitHub'da aç → tüm metni seçip yapıştır → Commit changes.", pdf_yok: "PDF sürümü hazırlanıyor; bu sayfayı yazdırabilirsiniz.",
@@ -49,7 +49,7 @@
       hakkimda: "Profile", secili_projeler: "Selected projects", sertifikalar: "Certifications", yetkinlikler: "Skills",
       diller: "Languages", ilgi: "Interests", not_ort: "GPA",
       pdf_indir: "Download PDF", yazdir: "Print", yazdir_ats: "Print (ATS, plain text)",
-      duz_baslik: "Edit mode", duz_bilgi: "Click a text to correct it. TR and EN are edited separately; switch the language at the top. Enter inside a bullet adds a new bullet, Backspace on an empty bullet removes it.",
+      duz_baslik: "Edit mode", duz_menu: "More options", duz_ac: "Edit text", duz_cik: "Exit edit mode", duz_bilgi: "Click a text to correct it. TR and EN are edited separately; switch the language at the top. Enter inside a bullet adds a new bullet, Backspace on an empty bullet removes it.",
       duz_taslak: "Draft saved in this browser", duz_yayinda: "Showing the published text", duz_kopyala: "Copy JSON", duz_kopyalandi: "Copied",
       duz_indir: "Download JSON", duz_github: "Open on GitHub", duz_sil: "Delete draft", duz_sil_onay: "Delete the draft and go back to the published text?",
       duz_adim: "To publish: Copy JSON → Open on GitHub → select all, paste → Commit changes.", pdf_yok: "The PDF version is being updated; you can print this page.",
@@ -268,7 +268,8 @@
         h("p", { class: "not", text: t("duz_bilgi") }),
         h("p", { class: "not", text: t("duz_adim") })),
       h("div", { class: "eylem" }, kopyala, indirD,
-        h("a", { class: "dugme", href: GITHUB_DUZENLE, target: "_blank", rel: "noopener", text: t("duz_github") }), sil)));
+        h("a", { class: "dugme", href: GITHUB_DUZENLE, target: "_blank", rel: "noopener", text: t("duz_github") }), sil,
+        h("a", { class: "dugme", href: "ozgecmis.html", text: t("duz_cik") }))));
   }
 
   function teknolojiler(liste) {
@@ -439,6 +440,19 @@
       };
     }
 
+    /* Sayfanın altında küçük "⋯" menüsü: düzenleme moduna giriş (göze batmaz, yazdırılmaz). */
+    function cvMenu() {
+      var acik = false;
+      var link = h("a", { class: "cv-menu-oge", href: "ozgecmis.html?duzenle=1", text: t("duz_ac"), hidden: "" });
+      var dugme = h("button", { type: "button", class: "cv-menu-dugme", "aria-label": t("duz_menu"), "aria-expanded": "false", title: t("duz_menu"), text: "⋯" });
+      dugme.addEventListener("click", function () {
+        acik = !acik;
+        dugme.setAttribute("aria-expanded", String(acik));
+        if (acik) link.removeAttribute("hidden"); else link.setAttribute("hidden", "");
+      });
+      return h("div", { class: "cv-menu" }, link, dugme);
+    }
+
     function bolum(baslik, icerik, sinif) {
       return h("section", { class: "cv-bolum" + (sinif ? " " + sinif : "") }, h("h2", { class: "cv-baslik", text: baslik }), icerik);
     }
@@ -510,6 +524,7 @@
     ekle(kap, h("article", { class: "kart cv", "data-palet": kok.getAttribute("data-palet"), "data-theme": "acik" },
       ust, rakamlar, h("div", { class: "cv-govde" }, ana, yan), alt));
     if (duzenle) duzenAraci(veri.taslakVar);
+    else ekle(kap, cvMenu());
   }
 
   /* ---------- akış ---------- */
