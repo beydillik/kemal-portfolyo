@@ -1,13 +1,13 @@
 {
   "surum": 1,
-  "guncelleme": "2026-11-27",
+  "guncelleme": "2026-11-28",
   "kisi": {
     "ad": "Kemal Beydilli",
     "konum": { "tr": "Manisa, Türkiye", "en": "Manisa, Türkiye" },
-    "unvan": { "tr": "Plant Controller · SMMM (CPA) · Yazılım Mühendisi", "en": "Plant Controller · CPA · Software Engineer" },
+    "unvan": { "tr": "Plant Controller · SMMM · Yazılım Mühendisliği (Lisans)", "en": "Plant Controller · Turkish CPA (SMMM) · BSc Software Engineering" },
     "slogan": {
-      "tr": "Rakamları okuyan, araçlarını kendi yazan bir controller.",
-      "en": "A controller who reads the numbers and builds his own tools."
+      "tr": "Rakamları okuyan, araçlarını yazılım ve yapay zekâyla kendi kuran bir controller.",
+      "en": "A controller who reads the numbers and builds his own tools with software and AI."
     },
     "iletisim": {
       "eposta": "kembeydilli@gmail.com",
@@ -21,12 +21,12 @@
   "one_cikanlar": [
     { "deger": "15+", "tr": "yıl finansal raporlama", "en": "years in financial reporting" },
     { "deger": "10+", "tr": "yıl otomotiv sektörü", "en": "years in automotive" },
-    { "deger": "SMMM", "tr": "2016'dan beri", "en": "CPA since 2016" },
+    { "deger": "SMMM", "tr": "2016'dan beri", "en": "Turkish CPA since 2016" },
     { "deger": "BSc", "tr": "Yazılım Mühendisliği, 2025", "en": "Software Engineering, 2025" }
   ],
   "hakkimda": {
-    "tr": "Otomotiv sektöründe 10 yılı aşkın deneyime sahip bir Plant Controller'ım; finansal raporlamada 15 yılı aşkın geçmişim var. SAP FI/CO, üretim maliyetleri, bütçe ve ay sonu kapanış günlük işim. 2016'dan beri SMMM'yim. 2025'te yazılım mühendisliği lisansını tamamladım ve bu iki alanı birleştiriyorum: ekiplerin her gün kullandığı raporlama araçlarını, rehberleri ve küçük uygulamaları yapay zekâ destekli geliştirme ile kendim kuruyorum.",
-    "en": "I'm a Plant Controller with more than ten years in the automotive industry and more than fifteen years in financial reporting. SAP FI/CO, production costing, budgeting and month-end close are my daily work, and I've been a certified public accountant (SMMM) since 2016. In 2025 I completed a degree in software engineering, and I now combine the two: I build the reporting tools, guides and small apps my teams use every day, with AI-assisted development."
+    "tr": "Otomotiv sektöründe 10 yılı aşkın süredir Plant Controller olarak çalışıyorum; finansal raporlamada 15 yılı aşkın deneyimim var. SAP FI/CO, üretim maliyetleri, bütçe ve ay sonu kapanışı temel sorumluluklarım. 2016'dan beri SMMM ruhsatına sahibim ve 2025'te Yazılım Mühendisliği lisans eğitimimi tamamladım. Finans bilgimi yazılım ve yapay zekâ araçlarıyla birleştiriyorum: ekiplerin her gün kullandığı raporlama araçlarını, rehberleri ve küçük uygulamaları Claude Code gibi yeni nesil araçlarla kendim geliştiriyor, elle yapılan işleri kontrollü ve tekrarlanabilir çalışma biçimlerine dönüştürüyorum.",
+    "en": "Plant Controller with more than ten years in the automotive industry and more than fifteen years in financial reporting. SAP FI/CO, production costing, budgeting and month-end close are my core responsibilities. Certified public accountant in Türkiye (SMMM) since 2016, with a BSc in Software Engineering (2025). I combine finance with software and AI: I build the reporting tools, guides and small apps my teams use every day with modern AI tools such as Claude Code, and turn manual work into controlled, repeatable ways of working."
   },
   "deneyim": [
     {
@@ -35,22 +35,22 @@
       "unvan": { "tr": "Plant Controller", "en": "Plant Controller" },
       "maddeler": {
         "tr": [
-          "Almanya'daki Chassis Division Controller'a ve Türkiye Country Manager'a raporluyorum; Manisa Fabrika Yönetim Ekibi üyesiyim.",
-          "Plant Controller, SAP Plant Coordinator ve CO Key User rollerini birlikte yürütüyorum.",
-          "Grup politikalarına uygun bütçe ve tahminler, ay sonu kapanışı ve yönetim raporlaması.",
-          "SAP ve SAP BW ile kontrol faaliyetleri; KPI raporlaması; üç aylık BCS raporları (bilanço ve kâr-zarar).",
+          "Almanya'daki Şasi Bölümü Controller'ına ve Türkiye Ülke Müdürü'ne bağlı çalışıyorum; Manisa Fabrika Yönetim Ekibi üyesiyim.",
+          "Pozisyonun boş kaldığı dönemde yaklaşık 6–7 ay Mali İşler Müdürlüğünü vekâleten yürüttüm.",
+          "Plant Controller görevinin yanında SAP Plant Coordinator ve CO Key User rollerini de üstleniyorum; SAP P10 (grup ERP sistemi) ve SAP S/4HANA geçişlerinde bu rollerle görev aldım.",
+          "Grup politikalarına uygun yıllık bütçe ve tahminleri hazırlıyor; ay sonu kapanışını ve yönetim raporlamasını yürütüyorum.",
+          "SAP ve SAP BW ile kontrol faaliyetleri, KPI raporlaması ve üç aylık grup konsolidasyon raporları (SAP BCS; bilanço ve kâr-zarar).",
           "Kârlılık, maliyet ve stok analizleri; verimlilik raporlarının kurulması ve geliştirilmesi.",
-          "Pozisyon boş kaldığı dönemde yaklaşık 6–7 ay Mali İşler Müdürü görevini de üstlendim.",
-          "Raporlama ve süreç ihtiyaçları için web tabanlı iç araçlar geliştiriyorum (bkz. Projeler)."
+          "Excel ve VBA ile elle hazırlanan raporlama süreçlerini, yazılım ve yapay zekâ araçlarıyla geliştirdiğim kontrol noktalı web uygulamalarına taşıyorum (bkz. Projeler)."
         ],
         "en": [
           "Report to the Chassis Division Controller at headquarters in Germany and to the Country Manager for Türkiye; member of the Manisa Plant Management Team.",
-          "Combine the roles of Plant Controller, SAP Plant Coordinator and CO Key User.",
-          "Budgets and forecasts in line with group policies, month-end close and management reporting.",
-          "Control activities in SAP and SAP BW; KPI reporting; quarterly BCS reports (balance sheet and P&L).",
-          "Profitability, cost and inventory analysis; building and improving productivity reports.",
-          "Also covered the Finance Manager role for about six to seven months while it was vacant.",
-          "Build web-based internal tools for reporting and process needs (see Projects)."
+          "Acting Finance Manager for about six to seven months while the position was vacant.",
+          "Also SAP Plant Coordinator and CO Key User; served in these roles in the SAP P10 (group ERP system) and SAP S/4HANA migrations.",
+          "Prepare annual budgets and forecasts in line with group policies; run month-end close and management reporting.",
+          "Control activities in SAP and SAP BW; KPI reporting; quarterly group consolidation reporting in SAP BCS (balance sheet and P&L).",
+          "Profitability, cost and inventory analysis; build and improve productivity reports.",
+          "Move manual Excel/VBA reporting into controlled web applications that I build with software and AI tools (see Projects)."
         ]
       }
     },
@@ -137,19 +137,20 @@
     { "ad": { "tr": "Serbest Muhasebeci Mali Müşavir (SMMM) — TÜRMOB", "en": "Certified Public Accountant (SMMM) — TÜRMOB" }, "yil": "2016", "detay": { "tr": "Yeterlilik sınavı 81/100 (Kasım 2015)", "en": "Proficiency exam 81/100 (Nov 2015)" } }
   ],
   "yetkinlikler": [
-    { "grup": { "tr": "Finans & Controlling", "en": "Finance & Controlling" }, "ogeler": ["Financial reporting", "Variance analysis", "Budgeting & forecasting", "Product costing", "Profitability analysis", "Month-end close", "IFRS / TFRS / VUK"] },
+    { "grup": { "tr": "Finans & Controlling", "en": "Finance & Controlling" }, "ogeler": {
+      "tr": ["Finansal raporlama", "Sapma analizi", "Bütçe ve tahmin", "Ürün maliyetlendirme", "Kârlılık analizi", "Ay sonu kapanış", "TFRS / UFRS / VUK"],
+      "en": ["Financial reporting", "Variance analysis", "Budgeting & forecasting", "Product costing", "Profitability analysis", "Month-end close", "IFRS / TFRS / VUK"] } },
     { "grup": { "tr": "ERP & BI", "en": "ERP & BI" }, "ogeler": ["SAP CO", "SAP FI", "SAP BW", "S/4HANA key user", "Power BI (Power Query, Power Pivot)", "Excel dashboards"] },
-    { "grup": { "tr": "Yazılım", "en": "Software" }, "ogeler": ["Python", "SQL", "Excel VBA", "HTML / CSS / JavaScript", "Git & GitHub", "Firebase"] },
+    { "grup": { "tr": "Yazılım", "en": "Software" }, "ogeler": ["Python", "SQL", "Excel VBA", "HTML / CSS / JavaScript", "Git & GitHub"] },
     { "grup": { "tr": "Yapay zekâ ile geliştirme", "en": "AI-assisted development" }, "ogeler": ["Claude Code", "AI skills & agent workflows", "Prompt design", "Static web apps (Netlify, GitHub Pages)"] }
   ],
   "diller": [
     { "dil": { "tr": "Türkçe", "en": "Turkish" }, "seviye": { "tr": "Anadil", "en": "Native" } },
-    { "dil": { "tr": "İngilizce", "en": "English" }, "seviye": null }
+    { "dil": { "tr": "İngilizce", "en": "English" }, "seviye": { "tr": "B2 · iş yazışmalarında güçlü", "en": "B2 · strong written and business English" } }
   ],
   "ilgi_alanlari": { "tr": ["Basketbol", "Teknoloji", "Yüzme ve yürüyüş", "Müzik"], "en": ["Basketball", "Technology", "Swimming & walking", "Music"] },
   "pdf": "assets/Kemal_Beydilli_CV.pdf",
   "acik_noktalar": [
-    "İngilizce seviyesi (ör. B2) yazılacak.",
     "PDF özgeçmiş bu dosyayla eşitlenecek: yazım düzeltmeleri, raporlama hattı (Country Manager), YBS ve projeler bölümü."
   ]
 }

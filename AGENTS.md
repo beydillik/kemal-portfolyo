@@ -97,7 +97,7 @@ Kod değişikliği gerekmez; sayfalar yeni kaydı kendiliğinden gösterir. Kod 
 
 ## 8. Açık işler
 
-- [ ] İngilizce seviyesi `ozgecmis.json`'a yazılacak.
+- [x] İngilizce seviyesi: B2 (28.11.2026).
 - [ ] PDF özgeçmiş güncellenip `assets/Kemal_Beydilli_CV.pdf` olarak eklenecek (yazım düzeltmeleri, Country Manager, YBS, projeler).
 - [ ] Vitrin projeleri için örnek veriyle ekran görüntüleri.
 - [ ] Alan adı (isteğe bağlı, sonra).
